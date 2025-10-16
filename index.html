@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html xml:lang="es">
-   <head>
-    <title>Saludando</title>
+  <head>
+    <title>Sumador</title>
   </head>
   <body>
-    <h1>Saludo</h1>
+    <h1>Saludador</h1>
     <form id="saludar-form">
-      <label for="nombre">Nombre del usuario:</label>
+      <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" />
-      <!-- Cambié el input submit por un button actuador con id saludar-button -->
-      <button type="button" id="saludar-button">Saludar</button>
+      <input type="submit" value="Saludar" id="saludar-button" />
     </form>
-    <!-- Div donde se mostrará el resultado -->
-    <div id="resultado-saludo"></div>
+    <div id="resultado-div"></div>
 
-
+    <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>

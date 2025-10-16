@@ -1,8 +1,8 @@
 describe("Saludador", () => {
-  it("Mostrar un saludo mas usuario", () => {
-    cy.visit("/");
-    cy.get("#nombre").type("Juan");
-    cy.get("#saludar-button").click();
-    cy.get("#resultado-div").should("contain", "Hola Juan");
+  it("Deberia saludar por nombre", () => {
+    cy.visit("/"); //Inicializacion
+    cy.get("#nombre").type("Juan"); //Inicializacion
+    cy.get("#saludar-button").click(); //Verificacion
+    cy.get("#resultado-div").should("contain", "Hola Juan"); //Verificacion
   });
 });

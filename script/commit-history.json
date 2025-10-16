@@ -1,17 +1,36 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "704d11eb90d1d31499b233836904a9409748f6b2",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-08-19T04:31:48.000Z",
       "message": "Funcion multiplicar",
-      "url": "https://github.com/Lackio-EL-14/Calculadora/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Calculadora/commit/704d11eb90d1d31499b233836904a9409748f6b2"
     },
     "stats": {
       "total": 35,
       "additions": 34,
       "deletions": 1,
       "date": "2025-08-19"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-16T14:11:01.000Z",
+      "message": "Ejemplo en clase saludador",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 20,
+      "deletions": 45,
+      "date": "2025-10-16"
     },
     "coverage": 100,
     "test_count": 1,
