@@ -4,14 +4,18 @@
     <title>Sumador</title>
   </head>
   <body>
-    <h1>Saludador</h1>
-    <form id="saludar-form">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" />
-      <input type="submit" value="Saludar" id="saludar-button" />
+    <h1>Publicar Mascotas</h1>
+    <form id="publicar-form">
+      <label for="nombre-mascota">Nombre mascota:</label>
+      <input type="text" id="nombre-mascota" />
+      <label for="raza">Raza:</label>
+      <input type="text" id="raza" />
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" />
+      <input type="submit" value="Publicar" id="publicar-button" />
     </form>
     <div id="resultado-div"></div>
 
-    <script type="module" src="./src/presenter.js"></script>
+    <!--<script type="module" src="./src/presenter.js"></script>-->
   </body>
 </html>

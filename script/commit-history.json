@@ -39,21 +39,21 @@
   },
   {
     "sha": "HEAD",
-    "author": "Camila",
+    "author": "Lackio-EL-14",
     "commit": {
-      "date": "2025-10-21T13:40:29.000Z",
-      "message": "feat: página de inicio",
+      "date": "2025-10-21T13:32:06.000Z",
+      "message": "Ordenando un poco los archivos",
       "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
     },
     "stats": {
-      "total": 14,
-      "additions": 14,
-      "deletions": 0,
+      "total": 37,
+      "additions": 31,
+      "deletions": 6,
       "date": "2025-10-21"
     },
-    "coverage": 100,
-    "test_count": 1,
+    "coverage": 0,
+    "test_count": 0,
     "failed_tests": 0,
-    "conclusion": "success"
+    "conclusion": "neutral"
   }
 ]
