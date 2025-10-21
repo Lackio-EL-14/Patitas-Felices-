@@ -38,17 +38,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6961c55c69ef75465bcbdfdcaf1f0f4b2f97340e",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-21T13:32:06.000Z",
       "message": "Ordenando un poco los archivos",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/6961c55c69ef75465bcbdfdcaf1f0f4b2f97340e"
     },
     "stats": {
       "total": 37,
       "additions": 31,
       "deletions": 6,
+      "date": "2025-10-21"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-21T14:11:31.000Z",
+      "message": "feat: homeage html y css",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
       "date": "2025-10-21"
     },
     "coverage": 0,

@@ -1,0 +1,14 @@
+h2{
+    width:9rem;
+    height: 5rem;
+    background-color: gray;
+    margin: 3rem;
+    padding: 4rem;
+}
+nav, main{
+    display: flex;
+    
+}
+nav{
+    justify-content:  space-around;
+}
