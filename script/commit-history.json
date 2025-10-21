@@ -76,17 +76,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "78ea5b07f2d357418e27c72fde1bcea79a3dc01f",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-21T14:31:01.000Z",
       "message": "fix: homepage funcional",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/78ea5b07f2d357418e27c72fde1bcea79a3dc01f"
     },
     "stats": {
       "total": 42,
       "additions": 24,
       "deletions": 18,
+      "date": "2025-10-21"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-21T14:34:54.000Z",
+      "message": "fix: pruebas comentadas jest y cypress",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 42,
+      "deletions": 49,
       "date": "2025-10-21"
     },
     "coverage": 0,
