@@ -57,17 +57,36 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "e25df1d7f594e04cd54b2bb3a471f8fbe414607f",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-21T14:11:31.000Z",
       "message": "feat: homeage html y css",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/e25df1d7f594e04cd54b2bb3a471f8fbe414607f"
     },
     "stats": {
       "total": 16,
       "additions": 15,
       "deletions": 1,
+      "date": "2025-10-21"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-21T14:31:01.000Z",
+      "message": "fix: homepage funcional",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 24,
+      "deletions": 18,
       "date": "2025-10-21"
     },
     "coverage": 0,
