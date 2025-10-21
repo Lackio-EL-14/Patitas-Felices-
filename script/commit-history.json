@@ -95,12 +95,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "bb6e2e8a04995924ca04d09d8a7f0ffa43da51cf",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-21T14:34:54.000Z",
       "message": "fix: pruebas comentadas jest y cypress",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/bb6e2e8a04995924ca04d09d8a7f0ffa43da51cf"
     },
     "stats": {
       "total": 91,
@@ -112,5 +112,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-21T14:54:58.000Z",
+      "message": "fix: agrego una prueba",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
+      "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
