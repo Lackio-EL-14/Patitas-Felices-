@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b1022f6f9a570f9fdf767fe769668c02c37f9911",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-16T14:11:01.000Z",
       "message": "Ejemplo en clase saludador",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/b1022f6f9a570f9fdf767fe769668c02c37f9911"
     },
     "stats": {
       "total": 65,
@@ -36,5 +36,24 @@
     "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-21T13:32:06.000Z",
+      "message": "Ordenando un poco los archivos",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 31,
+      "deletions": 6,
+      "date": "2025-10-21"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]
