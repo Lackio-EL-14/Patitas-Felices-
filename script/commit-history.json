@@ -190,17 +190,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "81a5eb097067cd3c8a276f306a466084d191980c",
     "author": "Camila",
     "commit": {
       "date": "2025-10-22T21:51:44.000Z",
       "message": "feat: cargado desde el json ver toda la información de un animal rescatado",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/81a5eb097067cd3c8a276f306a466084d191980c"
     },
     "stats": {
       "total": 92,
       "additions": 53,
       "deletions": 39,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-10-22T22:05:51.000Z",
+      "message": "feat: Ver toda la información de varios animales rextraviados",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 43904,
+      "additions": 25905,
+      "deletions": 17999,
       "date": "2025-10-22"
     },
     "coverage": 100,

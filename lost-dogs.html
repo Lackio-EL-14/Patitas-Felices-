@@ -37,17 +37,30 @@
             { "id": 19, "nombre": "Tom", "raza": "Siames", "departamento": "La Paz" },
             { "id": 20, "nombre": "Mimi", "raza": "Maine Coon", "departamento": "Cochabamba" }
         ]
-        const primerAnimal = dogs[0];
+       const contenedor = document.getElementById('info-animal');
 
-        // Seleccionamos los elementos por su atributo name
-        const nombreEl = document.querySelector('h2[name="nombre"]');
-        const departamentoEl = document.querySelector('p[name="departamento"]');
-        const razaEl = document.querySelector('p[name="raza"]');
+    dogs.forEach(perro => {
+      const tarjeta = document.createElement('div');
+      tarjeta.style.border = '1px solid #ccc';
+      tarjeta.style.padding = '1rem';
+      tarjeta.style.marginBottom = '1rem';
+      tarjeta.style.backgroundColor = '#f9f9f9';
 
-        // Asignamos el contenido
-        nombreEl.textContent = primerAnimal.nombre;
-        departamentoEl.textContent = `Departamento: ${primerAnimal.departamento}`;
-        razaEl.textContent = `Raza: ${primerAnimal.raza}`;
+      const nombre = document.createElement('h2');
+      nombre.textContent = perro.nombre;
+
+      const departamento = document.createElement('p');
+      departamento.textContent = `Departamento: ${perro.departamento}`;
+
+      const raza = document.createElement('p');
+      raza.textContent = `Raza: ${perro.raza}`;
+
+      tarjeta.appendChild(nombre);
+      tarjeta.appendChild(departamento);
+      tarjeta.appendChild(raza);
+
+      contenedor.appendChild(tarjeta);
+    });
 
     </script>
 </body>
