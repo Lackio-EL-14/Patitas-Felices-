@@ -228,17 +228,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ef235608e0857c8408a0ed3cd9a4f12628265202",
     "author": "Camila",
     "commit": {
       "date": "2025-10-22T23:22:18.000Z",
       "message": "feat: Filtrar extravíos por departamento",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ef235608e0857c8408a0ed3cd9a4f12628265202"
     },
     "stats": {
       "total": 43617,
       "additions": 17887,
       "deletions": 25730,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-10-22T23:24:48.000Z",
+      "message": "feat: agregado de barra de navegación a sección perritos extraviados",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 100,
