@@ -12,3 +12,7 @@ nav, main{
 nav{
     justify-content:  space-around;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
