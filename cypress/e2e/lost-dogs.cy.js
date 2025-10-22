@@ -21,8 +21,7 @@ describe("Ver sección de perritos extraviados", () => {
             { nombre: "Luna", raza: "Labrador Retriever", departamento: "La Paz" },
             { nombre: "Max", raza: "Pastor Alemán", departamento: "Cochabamba" },
             { nombre: "Bella", raza: "Beagle", departamento: "Santa Cruz" },
-            // Puedes agregar más si quieres verificar todos
-        ];
+     ];
 
         cy.get("#info-animal > div").should("have.length.at.least", perros.length);
 
@@ -33,7 +32,5 @@ describe("Ver sección de perritos extraviados", () => {
                 cy.contains("p", `Raza: ${perro.raza}`).should("exist");
             });
         });
-
     });
-
 });

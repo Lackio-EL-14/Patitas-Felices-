@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5a9faee1ca185cead5456733c2cd2b5f54682aca",
     "author": "Camila",
     "commit": {
       "date": "2025-10-22T22:05:51.000Z",
       "message": "feat: Ver toda la información de varios animales rextraviados",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/5a9faee1ca185cead5456733c2cd2b5f54682aca"
     },
     "stats": {
       "total": 43904,
       "additions": 25905,
       "deletions": 17999,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-10-22T23:22:18.000Z",
+      "message": "feat: Filtrar extravíos por departamento",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 43617,
+      "additions": 17887,
+      "deletions": 25730,
       "date": "2025-10-22"
     },
     "coverage": 100,
