@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f66307dba7c30571b6eba05d10a77c902fd91ae8",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-22T22:21:06.000Z",
       "message": "Falla: El panel no muestra la lista de solicitudes, por lo que se empezara un ciclo TDD para implementar reglas de negocio que solventen esto",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/f66307dba7c30571b6eba05d10a77c902fd91ae8"
     },
     "stats": {
       "total": 16,
@@ -167,6 +167,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-22T23:21:51.000Z",
+      "message": "feat: Se creo una funcion para probar el llamado feth (api para peticiones http) para mockear los datos a futuro",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
