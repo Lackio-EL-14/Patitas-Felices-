@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5c3d9b92ff59094a178718d300cedadb65d0f48d",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-22T15:20:56.000Z",
       "message": "feat: al apretar en el link de Adopciones nos lleva al html de Ver Adopciones",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/5c3d9b92ff59094a178718d300cedadb65d0f48d"
     },
     "stats": {
       "total": 27,
@@ -167,6 +167,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-22T22:58:37.000Z",
+      "message": "feat: Se agrego la logica de mascotas en adopcion, la prueba de obtener todas las mascotas salio exitosa",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 42,
+      "deletions": 0,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
