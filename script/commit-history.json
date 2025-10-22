@@ -114,18 +114,37 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "bf6695c84b561a238181693d21f9327c1ff59d7a",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-21T14:54:58.000Z",
       "message": "fix: agrego una prueba",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/bf6695c84b561a238181693d21f9327c1ff59d7a"
     },
     "stats": {
       "total": 12,
       "additions": 6,
       "deletions": 6,
       "date": "2025-10-21"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-22T22:06:14.000Z",
+      "message": "feat: Se añadio la navegacion al panel de solicitudes de adopcion desde la pagina principal",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2025-10-22"
     },
     "coverage": 100,
     "test_count": 1,
