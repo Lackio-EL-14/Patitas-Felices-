@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4e9514e59300b9d3914441d4352f6d9c02f40ea6",
     "author": "Camila",
     "commit": {
       "date": "2025-10-22T21:05:04.000Z",
       "message": "fix: test Linkear desde inicio a una nueva página y Mostrar el título 'Perritos extraviados'",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/4e9514e59300b9d3914441d4352f6d9c02f40ea6"
     },
     "stats": {
       "total": 11,
       "additions": 8,
       "deletions": 3,
+      "date": "2025-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-10-22T21:21:44.000Z",
+      "message": "feat: Ver toda la información de un animal rescatado",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 59,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 100,
