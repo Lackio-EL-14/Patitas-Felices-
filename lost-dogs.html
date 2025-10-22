@@ -10,12 +10,46 @@
 <body>
     <h1>Perritos Extraviados</h1>
     <div id="info-animal">
-        <h2>Luna</h2>
-        <p>Raza: Labrador Retriever</p>
-        <p>Departamento: La Paz</p>
-        <p>ID: 1</p>
+        <h2 name="nombre"></h2>
+        <p name="departamento"></p>
+        <p name="raza"></p>
     </div>
-    <script src="lost-dogs.js"></script>
+    <script>
+        const dogs = [
+            { "id": 1, "nombre": "Luna", "raza": "Labrador Retriever", "departamento": "La Paz" },
+            { "id": 2, "nombre": "Max", "raza": "Pastor Alemán", "departamento": "Cochabamba" },
+            { "id": 3, "nombre": "Bella", "raza": "Beagle", "departamento": "Santa Cruz" },
+            { "id": 4, "nombre": "Rocky", "raza": "Bulldog Francés", "departamento": "Tarija" },
+            { "id": 5, "nombre": "Nina", "raza": "Poodle", "departamento": "Oruro" },
+            { "id": 6, "nombre": "Toby", "raza": "Golden Retriever", "departamento": "Potosí" },
+            { "id": 7, "nombre": "Maya", "raza": "Chihuahua", "departamento": "Chuquisaca" },
+            { "id": 8, "nombre": "Simba", "raza": "Husky Siberiano", "departamento": "Beni" },
+            { "id": 9, "nombre": "Coco", "raza": "Shih Tzu", "departamento": "Pando" },
+            { "id": 10, "nombre": "Lola", "raza": "Dálmata", "departamento": "La Paz" },
+            { "id": 11, "nombre": "Bruno", "raza": "Boxer", "departamento": "Cochabamba" },
+            { "id": 12, "nombre": "Mila", "raza": "Yorkshire Terrier", "departamento": "Santa Cruz" },
+            { "id": 13, "nombre": "Leo", "raza": "Rottweiler", "departamento": "Tarija" },
+            { "id": 14, "nombre": "Sasha", "raza": "Border Collie", "departamento": "Oruro" },
+            { "id": 15, "nombre": "Duke", "raza": "Gran Danés", "departamento": "Potosí" },
+            { "id": 16, "nombre": "Kira", "raza": "Cocker Spaniel", "departamento": "Chuquisaca" },
+            { "id": 17, "nombre": "Zeus", "raza": "Doberman", "departamento": "Beni" },
+            { "id": 18, "nombre": "Firulais", "raza": "Criollo", "departamento": "Pando" },
+            { "id": 19, "nombre": "Tom", "raza": "Siames", "departamento": "La Paz" },
+            { "id": 20, "nombre": "Mimi", "raza": "Maine Coon", "departamento": "Cochabamba" }
+        ]
+        const primerAnimal = dogs[0];
+
+        // Seleccionamos los elementos por su atributo name
+        const nombreEl = document.querySelector('h2[name="nombre"]');
+        const departamentoEl = document.querySelector('p[name="departamento"]');
+        const razaEl = document.querySelector('p[name="raza"]');
+
+        // Asignamos el contenido
+        nombreEl.textContent = primerAnimal.nombre;
+        departamentoEl.textContent = `Departamento: ${primerAnimal.departamento}`;
+        razaEl.textContent = `Raza: ${primerAnimal.raza}`;
+
+    </script>
 </body>
 
 </html>
