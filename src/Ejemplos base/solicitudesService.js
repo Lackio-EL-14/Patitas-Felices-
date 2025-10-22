@@ -4,7 +4,9 @@
 }
 */
 async function getSolicitudes() {
-  return await fetch('/api/solicitudes');
+    const response =  await fetch('/api/solicitudes');
+    const data = await response.json();
+    return data;
 }
 
 export { getSolicitudes };

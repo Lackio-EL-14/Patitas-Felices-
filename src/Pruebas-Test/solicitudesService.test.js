@@ -10,8 +10,23 @@ describe('getSolicitudes', () => {
   });
   
   it('debería llamar a fetch con la ruta /api/solicitudes', async () => {
+    
+    global.fetch.mockResolvedValue({
+      json: jest.fn().mockResolvedValue([])
+    });
+
     await getSolicitudes();
     expect(global.fetch).toHaveBeenCalledWith('/api/solicitudes');
   });
-  
+
+  it('debería retornar los datos en formato JSON', async () => {
+    const mockData = [{ id: 1, nombre: 'Solicitud 1' }];
+    global.fetch.mockResolvedValue({
+        json: jest.fn().mockResolvedValue(mockData),
+    });
+    const result = await getSolicitudes();
+    expect(result).toEqual(mockData);
+    });
+
+
 });
