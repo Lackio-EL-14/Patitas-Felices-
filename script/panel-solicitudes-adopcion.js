@@ -51,6 +51,20 @@ function renderSolicitudes(solicitudes, contenedor) {
         alert('Error al aprobar la solicitud.');
       }
     });
+    document.querySelector(`[data-cy="btn-rechazar-${sol.id}"]`).addEventListener('click', async (e) => {
+      const btnAprobar = document.querySelector(`[data-cy="btn-aprobar-${sol.id}"]`);
+      const btnRechazar = e.target;
+      const estado = document.querySelector(`[data-cy="estado-${sol.id}"]`);
+
+      try {
+        await rechazarSolicitud(sol.id);
+        btnAprobar.disabled = true;
+        btnRechazar.disabled = true;
+        if (estado) estado.textContent = 'Estado: Rechazada';
+      } catch {
+        alert('Error al rechazar la solicitud.');
+      }
+    });
   });
 }
 

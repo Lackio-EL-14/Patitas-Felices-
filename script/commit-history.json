@@ -418,16 +418,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e55ad4fb4531a00d76d34821750dad82b6b5e449",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T05:52:05.000Z",
       "message": "feat: ahora tambien hay una validacion en caso de que falle el rechazo de una solicitud de adopcion",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/e55ad4fb4531a00d76d34821750dad82b6b5e449"
     },
     "stats": {
       "total": 7,
       "additions": 7,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 69.23,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T05:56:47.000Z",
+      "message": "feat: botton de rechazar solicitud de adopcion terminada, ahora al apretar el boton ya no te deja aceptar y cambia el estado de la solicitud a RECHAZADA",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
       "deletions": 0,
       "date": "2025-10-23"
     },
