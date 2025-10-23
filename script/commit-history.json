@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72581472b5d0dbf317cdb9b485c47a39f9e0d72c",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T11:02:18.000Z",
       "message": "Ahora despues de cierto tiempo de inactividad sin subir nada de la mascota aparecera un recordatorio recordando al usuario que debe publicar seguimiento",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/72581472b5d0dbf317cdb9b485c47a39f9e0d72c"
     },
     "stats": {
       "total": 91,
@@ -775,6 +775,25 @@
     },
     "coverage": 70,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T11:16:17.000Z",
+      "message": "fix: prueba jest que arruina el commit",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 65,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
