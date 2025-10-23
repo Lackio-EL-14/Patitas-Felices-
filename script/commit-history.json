@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "17bd2fa84ff359c46c95494f7de13aaa7e2d35e8",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T11:16:17.000Z",
       "message": "fix: prueba jest que arruina el commit",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/17bd2fa84ff359c46c95494f7de13aaa7e2d35e8"
     },
     "stats": {
       "total": 2,
@@ -813,6 +813,25 @@
     },
     "coverage": 65,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T11:26:00.000Z",
+      "message": "fix:probando si ahora da",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 4,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 55,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

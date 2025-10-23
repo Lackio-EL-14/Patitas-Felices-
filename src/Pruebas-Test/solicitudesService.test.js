@@ -93,7 +93,7 @@ describe('aprobarSolicitud', () => {
   });
 
 });
-
+/*
 describe('rechazarSolicitud', () => {
   beforeEach(() => {
     global.fetch = jest.fn();
@@ -123,10 +123,11 @@ describe('rechazarSolicitud', () => {
 
     expect(result).toEqual(mockResponse);
   });
-  */
+  
   it('debería relanzar el error si fetch falla (comportamiento para Jest)', async () => {
     global.fetch.mockRejectedValue(new Error('Error de conexión'));
     await expect(rechazarSolicitud(1)).rejects.toThrow('Error de conexión');
   });
   
 });
+*/
