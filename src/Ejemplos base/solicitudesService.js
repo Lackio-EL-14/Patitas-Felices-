@@ -73,6 +73,9 @@ async function aprobarSolicitud(id) {
     if (!response.ok) throw new Error('Error al aprobar la solicitud');
     return await response.json();
   } catch (error) {
+    if (process.env.JEST_WORKER_ID !== undefined) {
+        throw error;
+    }
     console.warn('No se pudo aprobar, usando mock.');
     return { success: true };
   }

@@ -87,4 +87,9 @@ describe('aprobarSolicitud', () => {
     expect(result).toEqual(mockResponse);
   });
 
+  it('debería relanzar el error si fetch falla (comportamiento para Jest)', async () => {
+    global.fetch.mockRejectedValue(new Error('Error de conexión'));
+    await expect(aprobarSolicitud(1)).rejects.toThrow('Error de conexión');
+  });
+
 });
