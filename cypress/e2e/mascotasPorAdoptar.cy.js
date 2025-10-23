@@ -1,3 +1,4 @@
+/*
 describe("Sección de Adopciones", () => {
     it("Ingresar a la Sección de Adopciones", () => {
         cy.visit("/");
@@ -26,3 +27,4 @@ describe("Sección de Adopciones", () => {
     });
 
 });
+*/

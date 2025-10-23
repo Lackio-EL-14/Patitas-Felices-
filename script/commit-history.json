@@ -1,15 +1,34 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "ad23aa27106a637af74cbfc91139ca2f07730e08",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T07:10:19.000Z",
       "message": "Merge branch 'main' into ver-Solicitudes-Adopcion",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ad23aa27106a637af74cbfc91139ca2f07730e08"
     },
     "stats": {
       "total": 382,
       "additions": 381,
+      "deletions": 1,
+      "date": "2025-10-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T07:19:21.000Z",
+      "message": "fix: Retirando pruebas que no dejan completar el push",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
       "deletions": 1,
       "date": "2025-10-23"
     },
