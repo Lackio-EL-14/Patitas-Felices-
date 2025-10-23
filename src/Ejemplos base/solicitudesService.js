@@ -20,4 +20,18 @@ async function getSolicitudes() {
   }
 }
 
-export { getSolicitudes };
+async function getDetalleSolicitud(id) {
+  try {
+    const response = await fetch(`/api/solicitudes/${id}`);
+    if (!response.ok) throw new Error('Error en la solicitud');
+    return response.json();
+  } catch (error) {
+    if (process.env.JEST_WORKER_ID !== undefined) {
+      throw error;
+    }
+
+  }
+
+}
+
+export { getSolicitudes, getDetalleSolicitud };

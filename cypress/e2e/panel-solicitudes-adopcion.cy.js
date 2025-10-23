@@ -24,5 +24,28 @@ describe ('Panel de Solicitudes', () => {
         cy.contains('Maria Lopez').should('be.visible');
         cy.contains('Carlos Sanchez').should('be.visible');
     });
+    it('debería mostrar los detalles de una solicitud al hacer clic en "Ver Detalle"', () => {
+        const solicitudesMock = [
+            { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' },
+            { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' }
+        ];
+        cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
+        const detalleMock = { 
+            id: 1, 
+            nombre: 'Juan Perez', 
+            mascota: 'Fido', 
+            email: 'juan.perez@email.com', 
+            motivo: 'Me encantan los perros' 
+        };
+        cy.intercept('GET', '/api/solicitudes/1', { body: detalleMock }).as('getDetalle');
+        cy.visit('/panel-solicitudes-adopcion.html');
+        cy.wait('@getSolicitudes'); 
+        cy.get('[data-cy="btn-detalle-1"]').click();
+        cy.wait('@getDetalle'); 
+        
+        cy.get('#modal-detalle').should('be.visible');
+        cy.get('#modal-detalle').contains('juan.perez@email.com');
+        cy.get('#modal-detalle').contains('Me encantan los perros');
+    });
 });
 

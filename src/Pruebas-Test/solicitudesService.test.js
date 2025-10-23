@@ -1,4 +1,4 @@
-import { getSolicitudes } from '../Ejemplos base/solicitudesService';
+import { getSolicitudes, getDetalleSolicitud } from '../Ejemplos base/solicitudesService';
 
 describe('getSolicitudes', () => {
     beforeEach(() => {
@@ -32,4 +32,22 @@ describe('getSolicitudes', () => {
     });
 
 
+});
+
+describe('getDetalleSolicitud', () => {
+  beforeEach(() => {
+    global.fetch = jest.fn();
+  });
+
+  it('debería llamar a la ruta correcta de detalle', async () => {
+    const mockDetalle = { id: 1, nombre: 'Juan Perez' };
+    global.fetch.mockResolvedValue({
+      ok: true,
+      json: async () => mockDetalle
+    });
+
+    const data = await getDetalleSolicitud(1);
+    expect(global.fetch).toHaveBeenCalledWith('/api/solicitudes/1');
+    expect(data).toEqual(mockDetalle);
+  });
 });

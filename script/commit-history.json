@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "63062b0da767c1addd9336665811cfd2b69596b3",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T03:34:31.000Z",
       "message": "fix: Error corregido al no mostrar la lista de datos en el localhost pero si en el cypress ya que este ultimo si se puede conectar a la api de fetch asi que para arreglarlo simulamos datos de manera local",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/63062b0da767c1addd9336665811cfd2b69596b3"
     },
     "stats": {
       "total": 20,
@@ -262,6 +262,25 @@
     },
     "coverage": 77.78,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T04:03:24.000Z",
+      "message": "feat: Se agrego una funcion que al apretar el detalle de una solicitud de adopcion, lleve a la ruta correcta para mostar todos los detalles",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 57,
+      "deletions": 2,
+      "date": "2025-10-23"
+    },
+    "coverage": 68.75,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
