@@ -304,17 +304,74 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f8f16c4d63798d3adcf4a677470738da5b8db975",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-23T01:42:06.000Z",
       "message": "feat: se pueden ver todas las mascotas en seccion de adopciones",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/f8f16c4d63798d3adcf4a677470738da5b8db975"
     },
     "stats": {
       "total": 95,
       "additions": 92,
       "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "65f2019b2faf8bea707f273ddd70c0db512592f9",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T02:08:38.000Z",
+      "message": "refactor: se puso id a las mascotas por adoptar, y un ver mas en la parte de las tarjetas de mascotas",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/65f2019b2faf8bea707f273ddd70c0db512592f9"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0143002ce814fc58fe8fc5bba145c94bafdfc844",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T02:09:49.000Z",
+      "message": "refactor: se puso color negro al link de adopciones",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/0143002ce814fc58fe8fc5bba145c94bafdfc844"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T04:14:02.000Z",
+      "message": "feat: muestra detalles de la lista de mascotas disponible",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 82,
+      "deletions": 4,
       "date": "2025-10-23"
     },
     "coverage": 100,

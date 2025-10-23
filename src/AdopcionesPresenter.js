@@ -11,8 +11,11 @@ function renderMascotas() {
         tarjeta.innerHTML = `
             <img src="${mascota.imagen}" alt="${mascota.nombre}" width="200" height="150">
             <h3>${mascota.nombre}</h3>
+            <a href="./detallesAdopciones.html?id=${mascota.id}" style="text-decoration: none; color: black;"> Ver más</a>
+            
         `;
-
+        
+        
         listaMascotas.appendChild(tarjeta);
     });
 }
