@@ -102,7 +102,7 @@ describe('rechazarSolicitud', () => {
   afterEach(() => {
     jest.resetAllMocks();
   });
-
+  /*
   it('debería llamar a fetch con la ruta /api/solicitudes/:id/rechazar y método PUT y retornar el json', async () => {
     const mockResponse = { success: true };
 
@@ -123,10 +123,10 @@ describe('rechazarSolicitud', () => {
 
     expect(result).toEqual(mockResponse);
   });
-  /*
+  */
   it('debería relanzar el error si fetch falla (comportamiento para Jest)', async () => {
     global.fetch.mockRejectedValue(new Error('Error de conexión'));
     await expect(rechazarSolicitud(1)).rejects.toThrow('Error de conexión');
   });
-  */
+  
 });

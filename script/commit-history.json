@@ -760,12 +760,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "be1bde4b3f54170591bb604df0996fb9699ef13c",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T11:09:14.000Z",
       "message": "feat se reorganizo el codigo ligeramente",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/be1bde4b3f54170591bb604df0996fb9699ef13c"
     },
     "stats": {
       "total": 13,
@@ -790,6 +790,25 @@
       "total": 2,
       "additions": 2,
       "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 65,
+    "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T11:18:31.000Z",
+      "message": "fix: prueba unit test equivocada y reemplazada",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
       "date": "2025-10-23"
     },
     "coverage": 65,
