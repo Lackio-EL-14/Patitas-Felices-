@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "67abf1abf251e9d694a603297821eb25dda5568a",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-23T00:52:18.000Z",
       "message": "feat: se anadio el html de ver adopciones y el linkeo que te lleva a ese html desde la pagina principal",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/67abf1abf251e9d694a603297821eb25dda5568a"
     },
     "stats": {
       "total": 9,
@@ -281,6 +281,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T01:29:11.000Z",
+      "message": "feat: carga correctamente todas las imagenes con nombres de gatos",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

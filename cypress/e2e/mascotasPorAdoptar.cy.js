@@ -4,4 +4,8 @@ describe("Sección de Adopciones", () => {
         cy.contains("Adopciones").click();
         cy.url().should("include", "/VerAdopciones.html");
     }); 
+       it("Ver todas las mascotas disponibles para adopción", () => {
+        cy.visit("/VerAdopciones.html");
+        cy.get(".tarjeta-mascota").should("have.length.greaterThan", 0);
+    });
 });
