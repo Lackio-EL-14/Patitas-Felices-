@@ -361,17 +361,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4053e3ba8dee19276518f2cc8c5b54402034dde2",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T05:11:49.000Z",
       "message": "feat: se agrega una validacion para que salte un error en caso de que la al aceptar la solicitud de adopcion exista algun fallo del servidor",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/4053e3ba8dee19276518f2cc8c5b54402034dde2"
     },
     "stats": {
       "total": 8,
       "additions": 8,
       "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 70,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T05:40:04.000Z",
+      "message": "feat: ahora al hacer click en aprobar cambia el estado de la solicitud a aprobada y ya no deja apretar ninguno de los otros dos botonoes ya que se acepto la solicitud",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 26,
+      "deletions": 17,
       "date": "2025-10-23"
     },
     "coverage": 70,

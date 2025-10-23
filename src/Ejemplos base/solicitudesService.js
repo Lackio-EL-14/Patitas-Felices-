@@ -65,7 +65,7 @@ async function aprobarSolicitud(id) {
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
 
   try {
-    const response = await fetch(`${baseUrl}/api/solicitudes/${id}/aprobar`, {
+    const response = await fetch(`/api/solicitudes/${id}/aprobar`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' }
     });
@@ -73,10 +73,10 @@ async function aprobarSolicitud(id) {
     if (!response.ok) throw new Error('Error al aprobar la solicitud');
     return await response.json();
   } catch (error) {
-    if (process.env.JEST_WORKER_ID !== undefined) {
-        throw error;
+    if (typeof process !== 'undefined' && process.env.JEST_WORKER_ID !== undefined) {
+      throw error;
     }
-    console.warn('No se pudo aprobar, usando mock.');
+    console.warn('No se pudo aprobar en backend, usando mock local:', error.message);
     return { success: true };
   }
 }

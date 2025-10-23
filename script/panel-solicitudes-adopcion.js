@@ -1,4 +1,4 @@
-import { getSolicitudes, getDetalleSolicitud } from "../src/Ejemplos base/solicitudesService.js";
+import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud } from "../src/Ejemplos base/solicitudesService.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
   const contenedor = document.getElementById('lista-solicitudes');
@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function renderSolicitudes(solicitudes, contenedor) {
   contenedor.innerHTML = ''; 
+
   solicitudes.forEach(sol => {
     contenedor.innerHTML += `
       <div class="solicitud" data-cy="solicitud-${sol.id}">
         <p>Adoptante: ${sol.nombre}</p>
         <p>Mascota: ${sol.mascota}</p>
+        <p data-cy="estado-${sol.id}">Estado: Pendiente</p>
         <button data-cy="btn-detalle-${sol.id}">Ver Detalle</button>
         <button data-cy="btn-aprobar-${sol.id}">Aprobar</button>
         <button data-cy="btn-rechazar-${sol.id}">Rechazar</button>
@@ -30,19 +32,26 @@ function renderSolicitudes(solicitudes, contenedor) {
   });
 
    solicitudes.forEach(sol => {
-    const btnDetalle = contenedor.querySelector(`[data-cy="btn-detalle-${sol.id}"]`);
-    if (btnDetalle) {
-      btnDetalle.addEventListener('click', async () => {
-        try {
-          const detalle = await getDetalleSolicitud(sol.id);
-          mostrarModal(detalle);
-        } catch (error) {
-          alert('Error al obtener detalles de la solicitud');
-        }
-      });
-    }
-  });
+    document.querySelector(`[data-cy="btn-detalle-${sol.id}"]`).addEventListener('click', async () => {
+      const detalle = await getDetalleSolicitud(sol.id);
+      mostrarModal(detalle);
+    });
 
+    document.querySelector(`[data-cy="btn-aprobar-${sol.id}"]`).addEventListener('click', async (e) => {
+      const btnAprobar = e.target;
+      const btnRechazar = document.querySelector(`[data-cy="btn-rechazar-${sol.id}"]`);
+      const estado = document.querySelector(`[data-cy="estado-${sol.id}"]`);
+
+      try {
+        await aprobarSolicitud(sol.id);
+        btnAprobar.disabled = true;
+        btnRechazar.disabled = true;
+        if (estado) estado.textContent = 'Estado: Aprobada';
+      } catch {
+        alert('Error al aprobar la solicitud.');
+      }
+    });
+  });
 }
 
 function mostrarModal(detalle) {
