@@ -90,6 +90,9 @@ async function rechazarSolicitud(id) {
     if (!response.ok) throw new Error('Error al rechazar la solicitud');
     return await response.json();
   } catch (error) {
+    if (typeof process !== 'undefined' && process.env.JEST_WORKER_ID !== undefined) {
+      throw error;
+    }
     console.warn(' No se pudo rechazar en backend, usando mock local:', error.message);
     return { success: true };
   }

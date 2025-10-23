@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8dbc564e718040ad88a64403fc2eafbed6986a93",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T05:48:02.000Z",
       "message": "feat: se agrego la funcion de rechazar siendo que esta actualiza y retorna un json para comprobar que se rechazo una solicitud de adopcion",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/8dbc564e718040ad88a64403fc2eafbed6986a93"
     },
     "stats": {
       "total": 63,
@@ -414,6 +414,25 @@
     },
     "coverage": 67.57,
     "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T05:52:05.000Z",
+      "message": "feat: ahora tambien hay una validacion en caso de que falle el rechazo de una solicitud de adopcion",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 69.23,
+    "test_count": 10,
     "failed_tests": 0,
     "conclusion": "success"
   }
