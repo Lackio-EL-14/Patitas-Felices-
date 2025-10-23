@@ -11,7 +11,9 @@ describe ('Panel de Solicitudes', () => {
         const solicitudesMock = [
         { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' },
         { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' },
-        { id: 3, nombre: 'Luis Martinez', mascota: 'Rex', estado: 'Aprobada' }
+        { id: 3, nombre: 'Luis Martinez', mascota: 'Rex', estado: 'Aprobada' },
+        { id: 4, nombre: 'Maria Lopez', mascota: 'Luna', estado: 'Rechazada' },
+        { id: 5, nombre: 'Carlos Sanchez', mascota: 'Max', estado: 'Pendiente' }
         ];
         cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
         cy.visit('/panel-solicitudes-adopcion.html');
@@ -19,6 +21,8 @@ describe ('Panel de Solicitudes', () => {
         cy.contains('Juan Perez').should('be.visible');
         cy.contains('Ana Gomez').should('be.visible');
         cy.contains('Luis Martinez').should('be.visible');
+        cy.contains('Maria Lopez').should('be.visible');
+        cy.contains('Carlos Sanchez').should('be.visible');
     });
 });
 

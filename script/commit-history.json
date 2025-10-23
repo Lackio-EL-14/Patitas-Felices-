@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "02696136d998688e503580b8b9fb1d9fc325e91e",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T03:23:17.000Z",
       "message": "feat: Ahora se puede ver la lista de solicitudes de adopcion al redirigir a la nueva pestaña",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/02696136d998688e503580b8b9fb1d9fc325e91e"
     },
     "stats": {
       "total": 53,
@@ -242,6 +242,25 @@
       "date": "2025-10-23"
     },
     "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T03:34:31.000Z",
+      "message": "fix: Error corregido al no mostrar la lista de datos en el localhost pero si en el cypress ya que este ultimo si se puede conectar a la api de fetch asi que para arreglarlo simulamos datos de manera local",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 17,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 77.78,
     "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
