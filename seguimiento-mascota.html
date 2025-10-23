@@ -11,7 +11,6 @@
     <div class="logo">
       <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" style="width: 15%; height: 80%;" />
     </div>
-
     <a href="seguimiento-mascota.html" style="text-decoration: none; color: black;" data-cy="link-seguimiento">
       <h3>Seguimiento de Mascotas</h3>
     </a>
@@ -19,12 +18,23 @@
 
   <main>
     <h2>Seguimiento de Mascotas</h2>
-
   
+    <label for="input-descripcion">Descripción:</label>
+    <textarea 
+      id="input-descripcion" 
+      data-cy="input-descripcion" 
+      rows="4" 
+      placeholder="Cuéntanos cómo está tu mascota..."
+    ></textarea>
+    
+    <br><br>
+
+    <label for="input-foto">Sube una foto:</label>
+
+
     <input type="file" id="input-foto" data-cy="input-foto">
     <button id="btn-subir" data-cy="btn-subir">Subir foto</button>
 
-    <
     <div id="contenedor-fotos" data-cy="contenedor-fotos"></div>
   </main>
 
