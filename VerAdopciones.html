@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Adopciones</title>
+    <style>
+        /* Estilos mínimos para que se vea ordenado */
+        #lista-mascotas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tarjeta-mascota {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 220px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .tarjeta-mascota img {
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<nav>
+    <div class="logo">
+      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices"
+      style="width: 15% ; height: 80%;" />
+
+    </div>
+    <h3>Solicitudes de Adopción</h3>
+    <a href="VerAdopciones.html" style="text-decoration: none; color: black;">
+    <h3>Adopciones</h3>
+    </a>
+    <h3><a href="./lost-dogs.html" style="text-decoration: none; color: black;">Perritos Extraviados</a></h3>
+    <button>Iniciar Sesion</button>
+    <button>Registrarse</button>
+  </nav>
+<body>
+    <h1>Sección de Adopciones</h1>
+    <div id="lista-mascotas"></div>
+
+    <script type="module">
+        import renderMascotas from './src/AdopcionesPresenter.js';
+        renderMascotas();
+    </script>
+</body>
+</html>

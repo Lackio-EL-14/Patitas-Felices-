@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perritos Extraviados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+    <div class="logo">
+      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices"
+      style="width: 15% ; height: 80%;" />
+
+    </div>
+    <h3>Solicitudes de Adocpción</h3>
+    <h3>Adopciones</h3>
+    <h3><a href="./lost-dogs.html" style="text-decoration: none; color: black;">Perritos Extraviados</a></h3>
+    <button>Iniciar Sesion</button>
+    <button>Registrarse</button>
+  </nav>
+  <h1>Perritos Extraviados</h1>
+
+  <label for="departamento-select">Filtrar por departamento:</label>
+  <select id="departamento-select">
+    <option value="">-- Todos --</option>
+    <option value="La Paz">La Paz</option>
+    <option value="Cochabamba">Cochabamba</option>
+    <option value="Santa Cruz">Santa Cruz</option>
+    <option value="Beni">Beni</option>
+    <option value="Pando">Pando</option>
+    <option value="Chuquisaca">Chuquisaca</option>
+    <option value="Oruro">Oruro</option>
+    <option value="Potosí">Potosí</option>
+    <option value="Tarija">Tarija</option>
+  </select>
+
+  <div id="info-animal"></div>
+
+  <script>
+    const dogs = [
+      { "id": 1, "nombre": "Luna", "raza": "Labrador Retriever", "departamento": "La Paz" },
+      { "id": 2, "nombre": "Max", "raza": "Pastor Alemán", "departamento": "Cochabamba" },
+      { "id": 3, "nombre": "Bella", "raza": "Beagle", "departamento": "Santa Cruz" },
+      { "id": 4, "nombre": "Rocky", "raza": "Bulldog Francés", "departamento": "Tarija" },
+      { "id": 5, "nombre": "Nina", "raza": "Poodle", "departamento": "Oruro" },
+      { "id": 6, "nombre": "Toby", "raza": "Golden Retriever", "departamento": "Potosí" },
+      { "id": 7, "nombre": "Maya", "raza": "Chihuahua", "departamento": "Chuquisaca" },
+      { "id": 8, "nombre": "Simba", "raza": "Husky Siberiano", "departamento": "Beni" },
+      { "id": 9, "nombre": "Coco", "raza": "Shih Tzu", "departamento": "Pando" },
+      { "id": 10, "nombre": "Lola", "raza": "Dálmata", "departamento": "La Paz" },
+      { "id": 11, "nombre": "Bruno", "raza": "Boxer", "departamento": "Cochabamba" },
+      { "id": 12, "nombre": "Mila", "raza": "Yorkshire Terrier", "departamento": "Santa Cruz" },
+      { "id": 13, "nombre": "Leo", "raza": "Rottweiler", "departamento": "Tarija" },
+      { "id": 14, "nombre": "Sasha", "raza": "Border Collie", "departamento": "Oruro" },
+      { "id": 15, "nombre": "Duke", "raza": "Gran Danés", "departamento": "Potosí" },
+      { "id": 16, "nombre": "Kira", "raza": "Cocker Spaniel", "departamento": "Chuquisaca" },
+      { "id": 17, "nombre": "Zeus", "raza": "Doberman", "departamento": "Beni" },
+      { "id": 18, "nombre": "Firulais", "raza": "Criollo", "departamento": "Pando" },
+      { "id": 19, "nombre": "Tom", "raza": "Siames", "departamento": "La Paz" },
+      { "id": 20, "nombre": "Mimi", "raza": "Maine Coon", "departamento": "Cochabamba" }
+    ];
+
+    const contenedor = document.getElementById('info-animal');
+    const select = document.getElementById('departamento-select');
+
+    function mostrarPerritos(filtroDepartamento) {
+      contenedor.innerHTML = ''; // Limpiar contenido anterior
+
+      const filtrados = filtroDepartamento
+        ? dogs.filter(perro => perro.departamento === filtroDepartamento)
+        : dogs;
+
+      filtrados.forEach(perro => {
+        const tarjeta = document.createElement('div');
+        tarjeta.style.border = '1px solid #ccc';
+        tarjeta.style.padding = '1rem';
+        tarjeta.style.marginBottom = '1rem';
+        tarjeta.style.backgroundColor = '#f9f9f9';
+
+        const nombre = document.createElement('h2');
+        nombre.textContent = perro.nombre;
+
+        const departamento = document.createElement('p');
+        departamento.textContent = `Departamento: ${perro.departamento}`;
+
+        const raza = document.createElement('p');
+        raza.textContent = `Raza: ${perro.raza}`;
+
+        tarjeta.appendChild(nombre);
+        tarjeta.appendChild(departamento);
+        tarjeta.appendChild(raza);
+
+        contenedor.appendChild(tarjeta);
+      });
+    }
+
+    // Mostrar todos al cargar
+    mostrarPerritos();
+
+    // Escuchar cambios en el select
+    select.addEventListener('change', (e) => {
+      mostrarPerritos(e.target.value);
+    });
+  </script>
+</body>
+
+</html>
