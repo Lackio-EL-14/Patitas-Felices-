@@ -10,11 +10,9 @@ describe('getSolicitudes', () => {
   });
   
   it('debería llamar a fetch con la ruta /api/solicitudes', async () => {
-    
     global.fetch.mockResolvedValue({
       json: jest.fn().mockResolvedValue([])
     });
-
     await getSolicitudes();
     expect(global.fetch).toHaveBeenCalledWith('/api/solicitudes');
   });
@@ -26,6 +24,11 @@ describe('getSolicitudes', () => {
     });
     const result = await getSolicitudes();
     expect(result).toEqual(mockData);
+    });
+
+    it('debería lanzar un error si fetch falla', async () => {
+        global.fetch.mockRejectedValue(new Error('Error de conexión'));
+        await expect(getSolicitudes()).rejects.toThrow('Error de conexión');
     });
 
 

@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f4f1c84c4b6627c0c45d5a2e4ad27e9500564371",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-22T23:57:03.000Z",
       "message": "feat: Ahora el fetch llamando a la ruta correcta ademas se retornan los datos en formato json",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/f4f1c84c4b6627c0c45d5a2e4ad27e9500564371"
     },
     "stats": {
       "total": 21,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T00:10:49.000Z",
+      "message": "feat: ahora si el fetch llegara a fallar su conexion, el sistema nos devolvera un error",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 13,
+      "deletions": 9,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
