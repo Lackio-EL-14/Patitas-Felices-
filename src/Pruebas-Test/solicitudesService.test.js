@@ -50,4 +50,9 @@ describe('getDetalleSolicitud', () => {
     expect(global.fetch).toHaveBeenCalledWith('/api/solicitudes/1');
     expect(data).toEqual(mockDetalle);
   });
+
+   it('debería lanzar error si fetch falla', async () => {
+    global.fetch.mockRejectedValue(new Error('Error de conexión'));
+    await expect(getDetalleSolicitud(1)).rejects.toThrow('Error de conexión');
+  });
 });

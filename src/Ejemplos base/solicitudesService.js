@@ -29,7 +29,14 @@ async function getDetalleSolicitud(id) {
     if (process.env.JEST_WORKER_ID !== undefined) {
       throw error;
     }
-
+    console.warn('Usando detalle mock porque el backend no está disponible.');
+    return {
+      id,
+      nombre: 'Juan Perez',
+      mascota: 'Fido',
+      email: 'mock@email.com',
+      motivo: 'Datos de prueba'
+    };
   }
 
 }

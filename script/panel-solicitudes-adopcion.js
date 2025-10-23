@@ -1,4 +1,4 @@
-import { getSolicitudes } from "../src/Ejemplos base/solicitudesService.js";
+import { getSolicitudes, getDetalleSolicitud } from "../src/Ejemplos base/solicitudesService.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
   const contenedor = document.getElementById('lista-solicitudes');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 function renderSolicitudes(solicitudes, contenedor) {
-  contenedor.innerHTML = ''; // Limpiar contenido previo
+  contenedor.innerHTML = ''; 
   solicitudes.forEach(sol => {
     contenedor.innerHTML += `
       <div class="solicitud" data-cy="solicitud-${sol.id}">

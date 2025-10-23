@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "11abd0e7ac50091b60f9f30d9a6c7848212c077f",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T04:03:24.000Z",
       "message": "feat: Se agrego una funcion que al apretar el detalle de una solicitud de adopcion, lleve a la ruta correcta para mostar todos los detalles",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/11abd0e7ac50091b60f9f30d9a6c7848212c077f"
     },
     "stats": {
       "total": 59,
@@ -281,6 +281,25 @@
     },
     "coverage": 68.75,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T04:07:21.000Z",
+      "message": "feat: Se agrego una validacion de error que lanza error si fetch falla al momento de visualizar los detalles de las solicitudes de adopciones",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 15,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 72.22,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }
