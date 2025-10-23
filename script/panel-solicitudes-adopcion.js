@@ -28,4 +28,65 @@ function renderSolicitudes(solicitudes, contenedor) {
       </div>
     `;
   });
+
+   solicitudes.forEach(sol => {
+    const btnDetalle = contenedor.querySelector(`[data-cy="btn-detalle-${sol.id}"]`);
+    if (btnDetalle) {
+      btnDetalle.addEventListener('click', async () => {
+        try {
+          const detalle = await getDetalleSolicitud(sol.id);
+          mostrarModal(detalle);
+        } catch (error) {
+          alert('Error al obtener detalles de la solicitud');
+        }
+      });
+    }
+  });
+
+}
+
+function mostrarModal(detalle) {
+  let modal = document.getElementById('modal-detalle');
+
+  // Crear modal si no existe aún
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'modal-detalle';
+    modal.classList.add('modal');
+    modal.style.position = 'fixed';
+    modal.style.top = '0';
+    modal.style.left = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.background = 'rgba(0, 0, 0, 0.6)';
+    modal.style.display = 'none';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.zIndex = '1000';
+
+    modal.innerHTML = `
+      <div id="modal-contenido" style="
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+      ">
+        <h3>Detalle de la Solicitud</h3>
+        <p id="modal-email"></p>
+        <p id="modal-motivo"></p>
+        <button id="cerrar-modal">Cerrar</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    modal.querySelector('#cerrar-modal').addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+  }
+
+  modal.querySelector('#modal-email').textContent = `Email: ${detalle.email}`;
+  modal.querySelector('#modal-motivo').textContent = `Motivo: ${detalle.motivo}`;
+  modal.style.display = 'flex';
 }

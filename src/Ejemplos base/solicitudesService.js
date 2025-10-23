@@ -20,25 +20,28 @@ async function getSolicitudes() {
   }
 }
 
+
 async function getDetalleSolicitud(id) {
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+
   try {
-    const response = await fetch(`/api/solicitudes/${id}`);
+    const response = await fetch(`${baseUrl}/api/solicitudes/${id}`);
     if (!response.ok) throw new Error('Error en la solicitud');
-    return response.json();
+    return await response.json();
   } catch (error) {
     if (process.env.JEST_WORKER_ID !== undefined) {
-      throw error;
+        throw error;
     }
-    console.warn('Usando detalle mock porque el backend no está disponible.');
+    console.warn('No se pudo obtener detalle, usando mock:', error.message);
     return {
       id,
       nombre: 'Juan Perez',
       mascota: 'Fido',
-      email: 'mock@email.com',
-      motivo: 'Datos de prueba'
+      email: 'JuanPerez@email.com',
+      motivo: 'Me encantan los perros'
     };
   }
-
 }
+
 
 export { getSolicitudes, getDetalleSolicitud };
