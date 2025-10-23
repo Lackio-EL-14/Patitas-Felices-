@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "53b0f1aa144ddb91d0a06aa39443f8723ccd67c6",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T05:40:04.000Z",
       "message": "feat: ahora al hacer click en aprobar cambia el estado de la solicitud a aprobada y ya no deja apretar ninguno de los otros dos botonoes ya que se acepto la solicitud",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/53b0f1aa144ddb91d0a06aa39443f8723ccd67c6"
     },
     "stats": {
       "total": 43,
@@ -395,6 +395,25 @@
     },
     "coverage": 70,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T05:48:02.000Z",
+      "message": "feat: se agrego la funcion de rechazar siendo que esta actualiza y retorna un json para comprobar que se rechazo una solicitud de adopcion",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 63,
+      "additions": 60,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 67.57,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

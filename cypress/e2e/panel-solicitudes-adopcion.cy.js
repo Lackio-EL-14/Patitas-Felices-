@@ -60,5 +60,17 @@ describe ('Panel de Solicitudes', () => {
         cy.get('[data-cy="btn-rechazar-1"]').should('be.disabled');
         cy.get('[data-cy="solicitud-1"]').contains('Estado: Aprobada');
     });
+    it('debería rechazar una solicitud al hacer clic en "Rechazar"', () => {
+        const solicitudesMock = [{ id: 1, nombre: 'Juan Perez', mascota: 'Fido' }];
+        cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
+        cy.intercept('PUT', '/api/solicitudes/1/rechazar', { statusCode: 200, body: { success: true } }).as('rechazarSolicitud');
+        cy.visit('/panel-solicitudes-adopcion.html');
+        cy.wait('@getSolicitudes');
+        cy.get('[data-cy="btn-rechazar-1"]').click();
+        cy.wait('@rechazarSolicitud'); 
+        cy.get('[data-cy="btn-aprobar-1"]').should('be.disabled');
+        cy.get('[data-cy="btn-rechazar-1"]').should('be.disabled');
+        cy.get('[data-cy="solicitud-1"]').contains('Estado: Rechazada');
+    });
 });
 

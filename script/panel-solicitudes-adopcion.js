@@ -1,4 +1,4 @@
-import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud } from "../src/Ejemplos base/solicitudesService.js";
+import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud } from "../src/Ejemplos base/solicitudesService.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
   const contenedor = document.getElementById('lista-solicitudes');

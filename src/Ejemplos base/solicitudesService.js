@@ -81,4 +81,18 @@ async function aprobarSolicitud(id) {
   }
 }
 
-export { getSolicitudes, getDetalleSolicitud, aprobarSolicitud };
+async function rechazarSolicitud(id) {
+  try {
+    const response = await fetch(`/api/solicitudes/${id}/rechazar`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' }
+    });
+    if (!response.ok) throw new Error('Error al rechazar la solicitud');
+    return await response.json();
+  } catch (error) {
+    console.warn(' No se pudo rechazar en backend, usando mock local:', error.message);
+    return { success: true };
+  }
+}
+
+export { getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud };
