@@ -93,7 +93,7 @@ describe('aprobarSolicitud', () => {
   });
 
 });
-/*
+
 describe('rechazarSolicitud', () => {
   beforeEach(() => {
     global.fetch = jest.fn();
@@ -102,7 +102,7 @@ describe('rechazarSolicitud', () => {
   afterEach(() => {
     jest.resetAllMocks();
   });
-  /*
+  
   it('debería llamar a fetch con la ruta /api/solicitudes/:id/rechazar y método PUT y retornar el json', async () => {
     const mockResponse = { success: true };
 
@@ -130,4 +130,3 @@ describe('rechazarSolicitud', () => {
   });
   
 });
-*/
