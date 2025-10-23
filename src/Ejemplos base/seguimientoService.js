@@ -1,9 +1,9 @@
 
 
-async function subirFoto(archivo) {
-  
-  return archivo;
+export async function subirFoto(archivo) {
+  return { url: URL.createObjectURL(archivo) };
 }
+
 
 const UMBRAL_DIAS_RECORDATORIO = 0.0001;
 

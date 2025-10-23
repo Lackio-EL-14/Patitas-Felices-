@@ -1,8 +1,5 @@
-import { verificarRecordatorio } from "../src/Ejemplos base/seguimientoService.js";
+import { verificarRecordatorio, subirFoto } from "../src/Ejemplos base/seguimientoService.js";
 
-export async function subirFoto(archivo) {
-  return { url: URL.createObjectURL(archivo) };
-}
 
 if (window.Cypress) {
   window.subirFoto = subirFoto;

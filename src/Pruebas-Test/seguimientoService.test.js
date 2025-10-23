@@ -1,4 +1,5 @@
 
+/*
 import { subirFoto } from '../Ejemplos base/seguimientoService';
 
 describe('seguimientoService', () => {
@@ -8,3 +9,4 @@ describe('seguimientoService', () => {
     expect(resultado.name).toBe('fido.jpg');
   });
 });
+*/

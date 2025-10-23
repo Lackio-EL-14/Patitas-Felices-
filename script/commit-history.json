@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e603f0f6a600701050ef05a5bb6f93733574ca4b",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T10:38:36.000Z",
       "message": "Ahora ademas de la foto se puede adjuntar una descripcion para subir ambas en conjunto, brindando asi un mejor seguimiento de la mascota adoptada",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/e603f0f6a600701050ef05a5bb6f93733574ca4b"
     },
     "stats": {
       "total": 87,
@@ -758,5 +758,24 @@
     "test_count": 12,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T11:09:14.000Z",
+      "message": "feat se reorganizo el codigo ligeramente",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 6,
+      "deletions": 7,
+      "date": "2025-10-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
