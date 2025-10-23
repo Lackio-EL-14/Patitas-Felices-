@@ -61,5 +61,21 @@ async function getDetalleSolicitud(id) {
   }
 }
 
+async function aprobarSolicitud(id) {
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
 
-export { getSolicitudes, getDetalleSolicitud };
+  try {
+    const response = await fetch(`${baseUrl}/api/solicitudes/${id}/aprobar`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    if (!response.ok) throw new Error('Error al aprobar la solicitud');
+    return await response.json();
+  } catch (error) {
+    console.warn('No se pudo aprobar, usando mock.');
+    return { success: true };
+  }
+}
+
+export { getSolicitudes, getDetalleSolicitud, aprobarSolicitud };

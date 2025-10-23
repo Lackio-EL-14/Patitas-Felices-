@@ -1,4 +1,4 @@
-import { getSolicitudes, getDetalleSolicitud } from '../Ejemplos base/solicitudesService';
+import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud } from '../Ejemplos base/solicitudesService';
 
 describe('getSolicitudes', () => {
     beforeEach(() => {
@@ -55,4 +55,36 @@ describe('getDetalleSolicitud', () => {
     global.fetch.mockRejectedValue(new Error('Error de conexión'));
     await expect(getDetalleSolicitud(1)).rejects.toThrow('Error de conexión');
   });
+});
+
+describe('aprobarSolicitud', () => {
+  beforeEach(() => {
+    global.fetch = jest.fn();
+  });
+
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  it('debería llamar a fetch con la ruta /api/solicitudes/:id/aprobar y método PUT y retornar el json', async () => {
+    const mockResponse = { success: true };
+
+    global.fetch.mockResolvedValue({
+      ok: true,
+      json: jest.fn().mockResolvedValue(mockResponse)
+    });
+
+    const result = await aprobarSolicitud(1);
+
+    
+    expect(global.fetch).toHaveBeenCalled();
+    const calledUrl = global.fetch.mock.calls[0][0];
+    const calledOpts = global.fetch.mock.calls[0][1];
+
+    expect(calledUrl.endsWith('/api/solicitudes/1/aprobar')).toBe(true);
+    expect(calledOpts).toMatchObject({ method: 'PUT' });
+
+    expect(result).toEqual(mockResponse);
+  });
+
 });
