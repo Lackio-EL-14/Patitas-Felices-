@@ -1,3 +1,5 @@
+
+
 describe ('Panel de Solicitudes', () => {
     it ('Deberiamos poder ser redirigidos a la ventana de solicitudes de adopcion', () => {
         cy.visit('/');
@@ -7,13 +9,16 @@ describe ('Panel de Solicitudes', () => {
     });
     it ('Deberiamos ver las solicitudes de adopcion en el panel', () => {
         const solicitudesMock = [
-        { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' }//,
-        //{ id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' }
+        { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' },
+        { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' },
+        { id: 3, nombre: 'Luis Martinez', mascota: 'Rex', estado: 'Aprobada' }
         ];
         cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
         cy.visit('/panel-solicitudes-adopcion.html');
         cy.wait('@getSolicitudes');
         cy.contains('Juan Perez').should('be.visible');
+        cy.contains('Ana Gomez').should('be.visible');
+        cy.contains('Luis Martinez').should('be.visible');
     });
 });
 

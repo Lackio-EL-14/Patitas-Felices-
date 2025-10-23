@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6fb8486c763a86dbfec0064bd3aac9b13953b85e",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T00:10:49.000Z",
       "message": "feat: ahora si el fetch llegara a fallar su conexion, el sistema nos devolvera un error",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/6fb8486c763a86dbfec0064bd3aac9b13953b85e"
     },
     "stats": {
       "total": 22,
       "additions": 13,
       "deletions": 9,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T03:23:17.000Z",
+      "message": "feat: Ahora se puede ver la lista de solicitudes de adopcion al redirigir a la nueva pestaña",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 51,
+      "deletions": 2,
       "date": "2025-10-23"
     },
     "coverage": 100,
