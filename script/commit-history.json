@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1d2f2572d683dba9d0e8706077e0c8f312bb3745",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T10:27:32.000Z",
       "message": "feat: ahora se puede subir una imagen o varias fotos diferentes en la pestaña correspondiente y mostrarlas para el seguimiento de la mascota adoptada",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/1d2f2572d683dba9d0e8706077e0c8f312bb3745"
     },
     "stats": {
       "total": 137,
@@ -739,5 +739,24 @@
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-10-23T11:02:18.000Z",
+      "message": "Ahora despues de cierto tiempo de inactividad sin subir nada de la mascota aparecera un recordatorio recordando al usuario que debe publicar seguimiento",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 87,
+      "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 55.77,
+    "test_count": 12,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

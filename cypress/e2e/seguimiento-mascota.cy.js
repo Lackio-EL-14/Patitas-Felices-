@@ -1,5 +1,6 @@
 
 
+
 describe('Seguimiento de mascota adoptada', () => {
 
   it('debería subir y mostrar la foto', () => {
@@ -32,6 +33,43 @@ describe('Seguimiento de mascota adoptada', () => {
       .should('have.attr', 'src', 'ruta-mock.jpg');
     cy.get('[data-cy="seguimiento-item"]')
       .should('contain.text', descripcionTexto);
+  });
+
+
+  it('no debería mostrar un recordatorio si se acaba de publicar', () => {
+    cy.visit('/seguimiento-mascota.html');
+
+    cy.window().then((win) => {
+      cy.stub(win, 'subirFoto').resolves({ url: 'ruta-mock.jpg' });
+    });
+
+   
+    cy.get('[data-cy="input-descripcion"]').type('Acabo de publicar, sin recordatorios por favor.');
+    cy.get('[data-cy="input-foto"]').attachFile('foto-test.jpg');
+    cy.get('[data-cy="btn-subir"]').click();
+
+
+    cy.get('[data-cy="recordatorio"]').should('not.be.visible');
+  });
+ 
+
+
+ 
+  it('debería mostrar un recordatorio si la última publicación fue hace más de 7 días', () => {
+    // Calculamos una fecha de hace unos minutos por fines practicos 
+    const hoy = new Date();
+    const fechaAntigua = new Date(hoy.setDate(hoy.getDate() - 8));
+
+  
+    cy.visit('/seguimiento-mascota.html', {
+      onBeforeLoad(win) {
+        win.localStorage.setItem('ultimaPublicacion', fechaAntigua.toISOString());
+      }
+    });
+
+    cy.get('[data-cy="recordatorio"]')
+      .should('be.visible')
+      .and('contain.text', 'Es hora de subir una nueva foto de tu mascota');
   });
 
 });
