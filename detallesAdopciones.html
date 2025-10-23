@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Detalle Mascota</title>
+    <style>
+        #detalle-mascota {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #detalle-mascota img {
+            border-radius: 8px;
+        }
+
+        .volver {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detalle de la Mascota</h1>
+    <div id="detalle-mascota"></div>
+
+    <a href="./VerAdopciones.html" class="volver">← Volver al listado</a>
+></a>
+
+    <script type="module">
+        import obtenerMascotas from './src/Adopciones.js';
+
+        function mostrarDetalle() {
+            const params = new URLSearchParams(window.location.search);
+            const id = parseInt(params.get('id'));
+
+            if (!id) {
+                document.getElementById('detalle-mascota').innerHTML = "<p>ID inválido o no proporcionado.</p>";
+                return;
+            }
+
+            const mascota = obtenerMascotas().find(m => m.id === id);
+
+            if (mascota) {
+                const contenedor = document.getElementById('detalle-mascota');
+                contenedor.innerHTML = `
+                    <img src="${mascota.imagen}" alt="${mascota.nombre}" width="300">
+                    <h2>${mascota.nombre}</h2>
+                `;
+            } else {
+                document.getElementById('detalle-mascota').innerHTML = "<p>No se encontró la mascota.</p>";
+            }
+        }
+
+        mostrarDetalle();
+    </script>
+</body>
+</html>
