@@ -47,5 +47,18 @@ describe ('Panel de Solicitudes', () => {
         cy.get('#modal-detalle').contains('juan.perez@email.com');
         cy.get('#modal-detalle').contains('Me encantan los perros');
     });
+    it('debería aprobar una solicitud al hacer clic en "Aprobar"', () => {
+
+        const solicitudesMock = [{ id: 1, nombre: 'Juan Perez', mascota: 'Fido' }];
+        cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
+        cy.intercept('PUT', '/api/solicitudes/1/aprobar', { statusCode: 200, body: { success: true } }).as('aprobarSolicitud');
+        cy.visit('/panel-solicitudes-adopcion.html');
+        cy.wait('@getSolicitudes');
+        cy.get('[data-cy="btn-aprobar-1"]').click();
+        cy.wait('@aprobarSolicitud'); 
+        cy.get('[data-cy="btn-aprobar-1"]').should('be.disabled');
+        cy.get('[data-cy="btn-rechazar-1"]').should('be.disabled');
+        cy.get('[data-cy="solicitud-1"]').contains('Estado: Aprobada');
+    });
 });
 

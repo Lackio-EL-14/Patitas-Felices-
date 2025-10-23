@@ -33,12 +33,30 @@ async function getDetalleSolicitud(id) {
         throw error;
     }
     console.warn('No se pudo obtener detalle, usando mock:', error.message);
-    return {
+    const mockDetalles = {
+      1: {
+        id: 1,
+        nombre: 'Juan Perez',
+        mascota: 'Fido',
+        email: 'juan.perez@email.com',
+        motivo: 'Me encantan los perros',
+      },
+      2: {
+        id: 2,
+        nombre: 'Ana Gomez',
+        mascota: 'Misu',
+        email: 'ana.gomez@email.com',
+        motivo: 'Tengo experiencia con gatos',
+      },
+    };
+
+    
+    return mockDetalles[id] || {
       id,
-      nombre: 'Juan Perez',
-      mascota: 'Fido',
-      email: 'JuanPerez@email.com',
-      motivo: 'Me encantan los perros'
+      nombre: 'Adoptante desconocido',
+      mascota: 'Mascota desconocida',
+      email: 'desconocido@email.com',
+      motivo: 'Sin motivo disponible',
     };
   }
 }
