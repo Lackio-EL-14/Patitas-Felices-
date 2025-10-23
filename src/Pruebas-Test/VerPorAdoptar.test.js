@@ -5,4 +5,5 @@ describe("Ver perritos en adopcion", () => {
         const mascotas = obtenerMascotas();
         expect(Array.isArray(mascotas)).toBe(true);
     }); 
+    
 });
