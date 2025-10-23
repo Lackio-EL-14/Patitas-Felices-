@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5c7a30e779fcf0c4dd946e96a7abc892f021ac12",
     "author": "Camila",
     "commit": {
       "date": "2025-10-22T23:24:48.000Z",
       "message": "feat: agregado de barra de navegación a sección perritos extraviados",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/5c7a30e779fcf0c4dd946e96a7abc892f021ac12"
     },
     "stats": {
       "total": 13,
@@ -262,6 +262,63 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "67abf1abf251e9d694a603297821eb25dda5568a",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T00:52:18.000Z",
+      "message": "feat: se anadio el html de ver adopciones y el linkeo que te lleva a ese html desde la pagina principal",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/67abf1abf251e9d694a603297821eb25dda5568a"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fb8f9b62b23ecc1d94e51cda4caa454a7ddf396d",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T01:29:11.000Z",
+      "message": "feat: carga correctamente todas las imagenes con nombres de gatos",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/fb8f9b62b23ecc1d94e51cda4caa454a7ddf396d"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-10-23T01:42:06.000Z",
+      "message": "feat: se pueden ver todas las mascotas en seccion de adopciones",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 95,
+      "additions": 92,
+      "deletions": 3,
+      "date": "2025-10-23"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
