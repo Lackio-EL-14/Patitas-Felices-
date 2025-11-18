@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "561c8c051bb63833fab9be17302169c7ada2ee0f",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-10-23T11:28:51.000Z",
       "message": "fix: quitar momentaneamente una prueba de unidad",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/561c8c051bb63833fab9be17302169c7ada2ee0f"
     },
     "stats": {
       "total": 17,
@@ -867,6 +867,25 @@
       "additions": 5,
       "deletions": 7,
       "date": "2025-10-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-18T14:19:34.000Z",
+      "message": "refactor: lost-dogs.html",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 120,
+      "additions": 53,
+      "deletions": 67,
+      "date": "2025-11-18"
     },
     "coverage": 70,
     "test_count": 11,
