@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "577fa487e36fc7af55a2c79eec5777c815f205f2",
     "author": "ela251643010",
     "commit": {
       "date": "2025-10-23T12:25:34.000Z",
       "message": "fix: se agregaron links a todas las paginas existentes",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/577fa487e36fc7af55a2c79eec5777c815f205f2"
     },
     "stats": {
       "total": 12,
@@ -885,6 +885,25 @@
       "total": 120,
       "additions": 53,
       "deletions": 67,
+      "date": "2025-11-18"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-18T18:06:47.000Z",
+      "message": "fix: bug versión cypress",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 39157,
+      "additions": 31755,
+      "deletions": 7402,
       "date": "2025-11-18"
     },
     "coverage": 70,
