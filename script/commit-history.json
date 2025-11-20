@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "96ebec743a1f501dfeebd2d7e2e2590e870c1637",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-20T13:44:15.000Z",
       "message": "feat: Moviendo archivos a sus correpondientes carpetas para seguir modelo hexagonal",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/96ebec743a1f501dfeebd2d7e2e2590e870c1637"
     },
     "stats": {
       "total": 0,
@@ -889,6 +889,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-20T13:49:09.000Z",
+      "message": "fix: Arreglando imports de los archivos en la carpeta Service",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2025-11-20"
+    },
+    "coverage": 70,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

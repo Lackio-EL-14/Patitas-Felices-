@@ -1,4 +1,4 @@
-import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud } from '../Ejemplos base/solicitudesService';
+import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud } from '../Ejemplos base/Services/solicitudesService.js';
 
 describe('getSolicitudes', () => {
     beforeEach(() => {

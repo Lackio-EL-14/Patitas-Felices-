@@ -1,4 +1,4 @@
-import { verificarRecordatorio, subirFoto } from "../src/Ejemplos base/seguimientoService.js";
+import { verificarRecordatorio, subirFoto } from "../src/Ejemplos base/Services/seguimientoService.js";
 
 
 if (window.Cypress) {
