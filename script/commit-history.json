@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ef8908cb09459df953d8bb392074756620cfbe14",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-20T13:39:11.000Z",
       "message": "fix: Solucionando problema de pruebas cypress en GitHub",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ef8908cb09459df953d8bb392074756620cfbe14"
     },
     "stats": {
       "total": 2,
@@ -870,6 +870,25 @@
     },
     "coverage": 70,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-20T13:44:15.000Z",
+      "message": "feat: Moviendo archivos a sus correpondientes carpetas para seguir modelo hexagonal",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-11-20"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
