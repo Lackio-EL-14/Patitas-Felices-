@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b3228839b03e71676373c1d631f74ca5b9e263ee",
     "author": "Camila",
     "commit": {
       "date": "2025-11-22T03:51:44.000Z",
       "message": "fix: mal direccionamiento panel-sol-adopción",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/b3228839b03e71676373c1d631f74ca5b9e263ee"
     },
     "stats": {
       "total": 9,
       "additions": 5,
       "deletions": 4,
+      "date": "2025-11-22"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-22T04:20:01.000Z",
+      "message": "fix: bug lost-dogs",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 0,
+      "deletions": 36,
       "date": "2025-11-22"
     },
     "coverage": 70,
