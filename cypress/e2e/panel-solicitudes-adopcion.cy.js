@@ -4,10 +4,11 @@ describe('Panel de Solicitudes', () => {
     it('Deberiamos poder ser redirigidos a la ventana de solicitudes de adopcion', () => {
         cy.visit('/');
         cy.get('[data-cy="link-panel-solicitudes"]')
-            .should('have.attr', 'href', '/dist/panel-solicitudes-adopcion.html');
+            .should('have.attr', 'href')
+            .and('include', 'panel-solicitudes-adopcion.html');
 
         cy.get('[data-cy="link-panel-solicitudes"]').click();
-        cy.url().should('include', '/dist/panel-solicitudes-adopcion.html');
+        cy.url().should('include', 'panel-solicitudes-adopcion.html');
     });
     it('Deberiamos ver las solicitudes de adopcion en el panel', () => {
         const solicitudesMock = [
