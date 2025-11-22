@@ -1,19 +1,21 @@
 
 
-describe ('Panel de Solicitudes', () => {
-    it ('Deberiamos poder ser redirigidos a la ventana de solicitudes de adopcion', () => {
+describe('Panel de Solicitudes', () => {
+    it('Deberiamos poder ser redirigidos a la ventana de solicitudes de adopcion', () => {
         cy.visit('/');
-        cy.get('[data-cy="link-panel-solicitudes"]').should('have.attr', 'href', '/panel-solicitudes-adopcion.html');
+        cy.get('[data-cy="link-panel-solicitudes"]')
+            .should('have.attr', 'href', '/dist/panel-solicitudes-adopcion.html');
+
         cy.get('[data-cy="link-panel-solicitudes"]').click();
-        cy.url().should('include', '/panel-solicitudes-adopcion.html')  
+        cy.url().should('include', '/dist/panel-solicitudes-adopcion.html');
     });
-    it ('Deberiamos ver las solicitudes de adopcion en el panel', () => {
+    it('Deberiamos ver las solicitudes de adopcion en el panel', () => {
         const solicitudesMock = [
-        { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' },
-        { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' },
-        { id: 3, nombre: 'Luis Martinez', mascota: 'Rex', estado: 'Aprobada' },
-        { id: 4, nombre: 'Maria Lopez', mascota: 'Luna', estado: 'Rechazada' },
-        { id: 5, nombre: 'Carlos Sanchez', mascota: 'Max', estado: 'Pendiente' }
+            { id: 1, nombre: 'Juan Perez', mascota: 'Fido', estado: 'Pendiente' },
+            { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' },
+            { id: 3, nombre: 'Luis Martinez', mascota: 'Rex', estado: 'Aprobada' },
+            { id: 4, nombre: 'Maria Lopez', mascota: 'Luna', estado: 'Rechazada' },
+            { id: 5, nombre: 'Carlos Sanchez', mascota: 'Max', estado: 'Pendiente' }
         ];
         cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
         cy.visit('/panel-solicitudes-adopcion.html');
@@ -30,19 +32,19 @@ describe ('Panel de Solicitudes', () => {
             { id: 2, nombre: 'Ana Gomez', mascota: 'Misu', estado: 'Pendiente' }
         ];
         cy.intercept('GET', '/api/solicitudes', { body: solicitudesMock }).as('getSolicitudes');
-        const detalleMock = { 
-            id: 1, 
-            nombre: 'Juan Perez', 
-            mascota: 'Fido', 
-            email: 'juan.perez@email.com', 
-            motivo: 'Me encantan los perros' 
+        const detalleMock = {
+            id: 1,
+            nombre: 'Juan Perez',
+            mascota: 'Fido',
+            email: 'juan.perez@email.com',
+            motivo: 'Me encantan los perros'
         };
         cy.intercept('GET', '/api/solicitudes/1', { body: detalleMock }).as('getDetalle');
         cy.visit('/panel-solicitudes-adopcion.html');
-        cy.wait('@getSolicitudes'); 
+        cy.wait('@getSolicitudes');
         cy.get('[data-cy="btn-detalle-1"]').click();
-        cy.wait('@getDetalle'); 
-        
+        cy.wait('@getDetalle');
+
         cy.get('#modal-detalle').should('be.visible');
         cy.get('#modal-detalle').contains('juan.perez@email.com');
         cy.get('#modal-detalle').contains('Me encantan los perros');
@@ -55,7 +57,7 @@ describe ('Panel de Solicitudes', () => {
         cy.visit('/panel-solicitudes-adopcion.html');
         cy.wait('@getSolicitudes');
         cy.get('[data-cy="btn-aprobar-1"]').click();
-        cy.wait('@aprobarSolicitud'); 
+        cy.wait('@aprobarSolicitud');
         cy.get('[data-cy="btn-aprobar-1"]').should('be.disabled');
         cy.get('[data-cy="btn-rechazar-1"]').should('be.disabled');
         cy.get('[data-cy="solicitud-1"]').contains('Estado: Aprobada');
@@ -67,7 +69,7 @@ describe ('Panel de Solicitudes', () => {
         cy.visit('/panel-solicitudes-adopcion.html');
         cy.wait('@getSolicitudes');
         cy.get('[data-cy="btn-rechazar-1"]').click();
-        cy.wait('@rechazarSolicitud'); 
+        cy.wait('@rechazarSolicitud');
         cy.get('[data-cy="btn-aprobar-1"]').should('be.disabled');
         cy.get('[data-cy="btn-rechazar-1"]').should('be.disabled');
         cy.get('[data-cy="solicitud-1"]').contains('Estado: Rechazada');

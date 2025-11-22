@@ -912,17 +912,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "67687251d61551fa1836a069fbda064e98e730ee",
     "author": "Camila",
     "commit": {
       "date": "2025-11-22T02:56:44.000Z",
       "message": "refactor: reorganización archivos en carpetas",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/67687251d61551fa1836a069fbda064e98e730ee"
     },
     "stats": {
       "total": 9205,
       "additions": 2655,
       "deletions": 6550,
+      "date": "2025-11-22"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-22T03:30:00.000Z",
+      "message": "fix: test ATDD fallida en panel-solicitudes-adopción",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 23,
+      "deletions": 21,
       "date": "2025-11-22"
     },
     "coverage": 70,
