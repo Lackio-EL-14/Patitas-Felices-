@@ -1,0 +1,789 @@
+[33mcommit a1fef02df7f070a3becf7276383f95b2316a9c11[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrefactoring[m[33m, [m[1;31morigin/refactoring[m[33m)[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 03:39:15 2025 -0400
+
+    refactor: adopciones presenter
+
+[33mcommit cce709e657d22fabc81a397a27ec93073cb632ec[m[33m ([m[1;32mmain[m[33m)[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 03:16:51 2025 -0400
+
+    Revert "feat: Creacion de archivos base para iniciar con la historia de usuario : Buscar Refugio"
+    
+    This reverts commit 70a5270162bc3aadbabcc27cbdbbdd3cb0666aec.
+
+[33mcommit 6a520744ab936df725a2704451726a62a3d489d9[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 01a6687 a3ff482
+Author: Camila Adriana Carvajal Gusman <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 02:59:52 2025 -0400
+
+    fix: intento de arreglar segumiento-mascota
+    
+    fix: intento de arreglar segumiento-mascota
+
+[33mcommit a3ff482702948bdaf3aefab40a31c387cc2410ac[m[33m ([m[1;31morigin/refactor[m[33m, [m[1;32mrefactor[m[33m)[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 02:57:53 2025 -0400
+
+    fix: intento de arreglar segumiento-mascota
+
+[33mcommit 01a668790edf9352bc499d1b45b10fdd23ab99ce[m
+Merge: 5851845 f56321e
+Author: Camila Adriana Carvajal Gusman <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 02:41:13 2025 -0400
+
+    fix: intento de arreglar segumiento-mascota
+    
+    fix: intento de arreglar segumiento-mascota
+
+[33mcommit f56321e04b180e8311bfc364c4baa4572df02172[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Sun Nov 23 02:39:55 2025 -0400
+
+    fix: intento de arreglar segumiento-mascota
+
+[33mcommit 5851845fd06495f33efb25baa591b1ab449d7645[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Sat Nov 22 00:20:01 2025 -0400
+
+    fix: bug lost-dogs
+
+[33mcommit b3228839b03e71676373c1d631f74ca5b9e263ee[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Fri Nov 21 23:51:44 2025 -0400
+
+    fix: mal direccionamiento panel-sol-adopción
+
+[33mcommit 37b1bd973ff0e82781d923efc31571e9762f02d6[m
+Merge: 3315e8e 70a5270
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Fri Nov 21 23:43:23 2025 -0400
+
+    fix: último pull
+
+[33mcommit 3315e8e80c13d8037b16f5e42648eb6b58d94a81[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Fri Nov 21 23:30:00 2025 -0400
+
+    fix: test ATDD fallida en panel-solicitudes-adopción
+
+[33mcommit 67687251d61551fa1836a069fbda064e98e730ee[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Fri Nov 21 22:56:44 2025 -0400
+
+    refactor: reorganización archivos en carpetas
+
+[33mcommit 70a5270162bc3aadbabcc27cbdbbdd3cb0666aec[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Nov 20 10:14:58 2025 -0400
+
+    feat: Creacion de archivos base para iniciar con la historia de usuario : Buscar Refugio
+
+[33mcommit cfd326831f3f517829f77de1b83830827dce5cc3[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Nov 20 09:49:09 2025 -0400
+
+    fix: Arreglando imports de los archivos en la carpeta Service
+
+[33mcommit 96ebec743a1f501dfeebd2d7e2e2590e870c1637[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Nov 20 09:44:15 2025 -0400
+
+    feat: Moviendo archivos a sus correpondientes carpetas para seguir modelo hexagonal
+
+[33mcommit ef8908cb09459df953d8bb392074756620cfbe14[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Nov 20 09:39:11 2025 -0400
+
+    fix: Solucionando problema de pruebas cypress en GitHub
+
+[33mcommit d7c21f804cb99af021e5f905eccd25ceabb37b6e[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Nov 20 09:27:10 2025 -0400
+
+    revert hecho a una version funcional
+
+[33mcommit d347dfdf02e509288c5b64696d7300d880fe3f56[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Tue Nov 18 14:06:47 2025 -0400
+
+    fix: bug versión cypress
+
+[33mcommit 577fa487e36fc7af55a2c79eec5777c815f205f2[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Tue Nov 18 10:19:34 2025 -0400
+
+    refactor: lost-dogs.html
+
+[33mcommit 561c8c051bb63833fab9be17302169c7ada2ee0f[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Thu Oct 23 08:25:34 2025 -0400
+
+    fix: se agregaron links a todas las paginas existentes
+
+[33mcommit 79372206b9e3ba79ff7dfaecafe02afe280a1184[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:28:51 2025 -0400
+
+    fix: quitar momentaneamente una prueba de unidad
+
+[33mcommit e53d76cff01e806c75a22405131f0959dbcc1992[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:26:00 2025 -0400
+
+    fix:probando si ahora da
+
+[33mcommit 17bd2fa84ff359c46c95494f7de13aaa7e2d35e8[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:18:31 2025 -0400
+
+    fix: prueba unit test equivocada y reemplazada
+
+[33mcommit be1bde4b3f54170591bb604df0996fb9699ef13c[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:16:17 2025 -0400
+
+    fix: prueba jest que arruina el commit
+
+[33mcommit 72581472b5d0dbf317cdb9b485c47a39f9e0d72c[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:09:14 2025 -0400
+
+    feat se reorganizo el codigo ligeramente
+
+[33mcommit e603f0f6a600701050ef05a5bb6f93733574ca4b[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 07:02:18 2025 -0400
+
+    Ahora despues de cierto tiempo de inactividad sin subir nada de la mascota aparecera un recordatorio recordando al usuario que debe publicar seguimiento
+
+[33mcommit 1d2f2572d683dba9d0e8706077e0c8f312bb3745[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 06:38:36 2025 -0400
+
+    Ahora ademas de la foto se puede adjuntar una descripcion para subir ambas en conjunto, brindando asi un mejor seguimiento de la mascota adoptada
+
+[33mcommit 340e39c2e1e6d8f9904a01cff819809daa47e3b3[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 06:27:32 2025 -0400
+
+    feat: ahora se puede subir una imagen o varias fotos diferentes en la pestaña correspondiente y mostrarlas para el seguimiento de la mascota adoptada
+
+[33mcommit 6e776a16fa42adaa251b86bec73c0dff76a0f747[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 03:59:19 2025 -0400
+
+    feat: Ahora se puede subir un archivo al seguimiento de mascotas adoptadas principalmente una foto
+
+[33mcommit 17186b60c7fe728184e87a1e406b841ed71214de[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 03:19:21 2025 -0400
+
+    fix: Retirando pruebas que no dejan completar el push
+
+[33mcommit ad23aa27106a637af74cbfc91139ca2f07730e08[m
+Merge: b9758be 49772d2
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 03:10:19 2025 -0400
+
+    Merge branch 'main' into ver-Solicitudes-Adopcion
+
+[33mcommit b9758be42318c67decb727d594a2585a91c52102[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:56:47 2025 -0400
+
+    feat: botton de rechazar solicitud de adopcion terminada, ahora al apretar el boton ya no te deja aceptar y cambia el estado de la solicitud a RECHAZADA
+
+[33mcommit e55ad4fb4531a00d76d34821750dad82b6b5e449[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:52:05 2025 -0400
+
+    feat: ahora tambien hay una validacion en caso de que falle el rechazo de una solicitud de adopcion
+
+[33mcommit 8dbc564e718040ad88a64403fc2eafbed6986a93[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:48:02 2025 -0400
+
+    feat: se agrego la funcion de rechazar siendo que esta actualiza y retorna un json para comprobar que se rechazo una solicitud de adopcion
+
+[33mcommit 53b0f1aa144ddb91d0a06aa39443f8723ccd67c6[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:40:04 2025 -0400
+
+    feat: ahora al hacer click en aprobar cambia el estado de la solicitud a aprobada y ya no deja apretar ninguno de los otros dos botonoes ya que se acepto la solicitud
+
+[33mcommit 4053e3ba8dee19276518f2cc8c5b54402034dde2[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:11:49 2025 -0400
+
+    feat: se agrega una validacion para que salte un error en caso de que la al aceptar la solicitud de adopcion exista algun fallo del servidor
+
+[33mcommit 8adb90e9c1a28f1c13c1df57cc2dc90d3ea742a2[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 01:09:47 2025 -0400
+
+    feat: ahora se puede apretar el boton de aceptar, lo que llamara a un actualizar y retornara el json con el estado: solicitud aprobada
+
+[33mcommit b0b2297d1195c8c419ce30b89344c0fec1cb7957[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 00:51:40 2025 -0400
+
+    refact: se modifico la estructura de mostrar detalle para que muestre informacion generica en cado de que no existan datos de una solicitud
+
+[33mcommit e0969c6c313a8a455ae61fa5ab4a471858b3af44[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 00:45:35 2025 -0400
+
+    feat: ahora al apretar el boton de ver detalles muestra los detalles de la solicitud en una ventana emergente como el email y el motivo, esta ventana emergente se puede cerrar
+
+[33mcommit 49772d23e606af43489b3d525d558477b7d3af8c[m
+Merge: f8f16c4 2442f82
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Thu Oct 23 00:19:48 2025 -0400
+
+    Merge pull request #3 from Lackio-EL-14/ver-detalles-perritos-en-adopcion
+    
+    Ver detalles perritos en adopcion
+
+[33mcommit 2442f82a45e0d9eb45482837243145da1db3278c[m[33m ([m[1;31morigin/ver-detalles-perritos-en-adopcion[m[33m)[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Thu Oct 23 00:14:02 2025 -0400
+
+    feat: muestra detalles de la lista de mascotas disponible
+
+[33mcommit c8ca912424e8b4efb8d7cdb656ff6a7d80112200[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 00:07:21 2025 -0400
+
+    feat: Se agrego una validacion de error que lanza error si fetch falla al momento de visualizar los detalles de las solicitudes de adopciones
+
+[33mcommit 11abd0e7ac50091b60f9f30d9a6c7848212c077f[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 23 00:03:24 2025 -0400
+
+    feat: Se agrego una funcion que al apretar el detalle de una solicitud de adopcion, lleve a la ruta correcta para mostar todos los detalles
+
+[33mcommit 63062b0da767c1addd9336665811cfd2b69596b3[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 23:34:31 2025 -0400
+
+    fix: Error corregido al no mostrar la lista de datos en el localhost pero si en el cypress ya que este ultimo si se puede conectar a la api de fetch asi que para arreglarlo simulamos datos de manera local
+
+[33mcommit 02696136d998688e503580b8b9fb1d9fc325e91e[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 23:23:17 2025 -0400
+
+    feat: Ahora se puede ver la lista de solicitudes de adopcion al redirigir a la nueva pestaña
+
+[33mcommit 0143002ce814fc58fe8fc5bba145c94bafdfc844[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 22:09:49 2025 -0400
+
+    refactor: se puso color negro al link de adopciones
+
+[33mcommit 65f2019b2faf8bea707f273ddd70c0db512592f9[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 22:08:38 2025 -0400
+
+    refactor: se puso id a las mascotas por adoptar, y un ver mas en la parte de las tarjetas de mascotas
+
+[33mcommit f8f16c4d63798d3adcf4a677470738da5b8db975[m
+Merge: 5c7a30e cf32d1a
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 21:49:27 2025 -0400
+
+    Merge pull request #2 from Lackio-EL-14/ver-seccion-adoptados
+    
+    Ver seccion adoptados
+
+[33mcommit cf32d1af2ee056fe9788821a08d5205f3ccadfdf[m[33m ([m[1;31morigin/ver-seccion-adoptados[m[33m)[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 21:42:06 2025 -0400
+
+    feat: se pueden ver todas las mascotas en seccion de adopciones
+
+[33mcommit fb8f9b62b23ecc1d94e51cda4caa454a7ddf396d[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 21:29:11 2025 -0400
+
+    feat: carga correctamente todas las imagenes con nombres de gatos
+
+[33mcommit 67abf1abf251e9d694a603297821eb25dda5568a[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Wed Oct 22 20:52:18 2025 -0400
+
+    feat: se anadio el html de ver adopciones y el linkeo que te lleva a ese html desde la pagina principal
+
+[33mcommit 6fb8486c763a86dbfec0064bd3aac9b13953b85e[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 20:10:49 2025 -0400
+
+    feat: ahora si el fetch llegara a fallar su conexion, el sistema nos devolvera un error
+
+[33mcommit f4f1c84c4b6627c0c45d5a2e4ad27e9500564371[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 19:57:03 2025 -0400
+
+    feat: Ahora el fetch llamando a la ruta correcta ademas se retornan los datos en formato json
+
+[33mcommit 5c7a30e779fcf0c4dd946e96a7abc892f021ac12[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 19:24:48 2025 -0400
+
+    feat: agregado de barra de navegación a sección perritos extraviados
+
+[33mcommit ef235608e0857c8408a0ed3cd9a4f12628265202[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 19:22:18 2025 -0400
+
+    feat: Filtrar extravíos por departamento
+
+[33mcommit 9f61e818c4accab451e9c03b65baadf35c877ba8[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 19:21:51 2025 -0400
+
+    feat: Se creo una funcion para probar el llamado feth (api para peticiones http) para mockear los datos a futuro
+
+[33mcommit f66307dba7c30571b6eba05d10a77c902fd91ae8[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 18:21:06 2025 -0400
+
+    Falla: El panel no muestra la lista de solicitudes, por lo que se empezara un ciclo TDD para implementar reglas de negocio que solventen esto
+
+[33mcommit ff00219fbb4736cd908e4cb00d5fea787c6814a3[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Wed Oct 22 18:06:14 2025 -0400
+
+    feat: Se añadio la navegacion al panel de solicitudes de adopcion desde la pagina principal
+
+[33mcommit 5a9faee1ca185cead5456733c2cd2b5f54682aca[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 18:05:51 2025 -0400
+
+    feat: Ver toda la información de varios animales rextraviados
+
+[33mcommit 81a5eb097067cd3c8a276f306a466084d191980c[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 17:51:44 2025 -0400
+
+    feat: cargado desde el json ver toda la información de un animal rescatado
+
+[33mcommit 6ddb9788edb8cdb864f84f079c718fb5f6e082c4[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 17:21:44 2025 -0400
+
+    feat: Ver toda la información de un animal rescatado
+
+[33mcommit 4e9514e59300b9d3914441d4352f6d9c02f40ea6[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 17:05:04 2025 -0400
+
+    fix: test Linkear desde inicio a una nueva página y Mostrar el título 'Perritos extraviados'
+
+[33mcommit 0e4d5efb34f3e5a3f522f79ee2c5e3fbb78591c4[m
+Author: Camila <camila.carvajal@ucb.edu.bo>
+Date:   Wed Oct 22 16:57:30 2025 -0400
+
+    feat: Linkear desde inicio a una nueva página y Mostrar el título 'Perritos extraviados'
+
+[33mcommit bf6695c84b561a238181693d21f9327c1ff59d7a[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Tue Oct 21 10:54:58 2025 -0400
+
+    fix: agrego una prueba
+
+[33mcommit bb6e2e8a04995924ca04d09d8a7f0ffa43da51cf[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Tue Oct 21 10:34:54 2025 -0400
+
+    fix: pruebas comentadas jest y cypress
+
+[33mcommit 78ea5b07f2d357418e27c72fde1bcea79a3dc01f[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Tue Oct 21 10:31:01 2025 -0400
+
+    fix: homepage funcional
+
+[33mcommit e25df1d7f594e04cd54b2bb3a471f8fbe414607f[m
+Author: ela251643010 <daniela.condori.b@ucb.edu.bo>
+Date:   Tue Oct 21 10:11:31 2025 -0400
+
+    feat: homeage html y css
+
+[33mcommit 6961c55c69ef75465bcbdfdcaf1f0f4b2f97340e[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Tue Oct 21 09:32:06 2025 -0400
+
+    Ordenando un poco los archivos
+
+[33mcommit b1022f6f9a570f9fdf767fe769668c02c37f9911[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Thu Oct 16 10:11:01 2025 -0400
+
+    Ejemplo en clase saludador
+
+[33mcommit 704d11eb90d1d31499b233836904a9409748f6b2[m[33m ([m[1;31morigin/develop[m[33m, [m[1;31morigin/Edson[m[33m, [m[1;31morigin/Daniela[m[33m, [m[1;31morigin/Camila[m[33m)[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Tue Oct 14 09:52:31 2025 -0400
+
+    Proyecto baseee
+
+[33mcommit e2a33e4b2d26a289a97ff25a2bac35eee61d290a[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Tue Oct 14 09:47:30 2025 -0400
+
+    Proyecto base
+
+[33mcommit d8c4109513b0e01e59c736034b3edd91e55e5949[m
+Author: Lackio-EL-14 <edsonlamas14@gmail.com>
+Date:   Tue Aug 19 00:31:48 2025 -0400
+
+    Funcion multiplicar
+
+[33mcommit 7dc9e90d2aea7dfe30be8fc406096377f73a50c8[m
+Author: JonathanELPRO <jonathan.moruno@ucb.du.bo>
+Date:   Mon Jun 16 16:36:41 2025 -0400
+
+    se agrego el prompt de la extension
+
+[33mcommit 0897b3532dee2d5a91b1322701f085140b82cd9e[m
+Merge: 01e7631 1ca267a
+Author: Dylancalle <132177477+Dylancalle@users.noreply.github.com>
+Date:   Thu Jun 12 11:42:00 2025 -0400
+
+    Merge pull request #20 from UCB-TallerDeDesarrollo/Areglo_lineas_modificadas
+    
+    Se arreglo la recepcion de lineas modificadas
+
+[33mcommit 1ca267a57e2af4e8da1bfe7af0e6a045773b959d[m
+Author: Dylan <dylan.calle@ucb.edu.bo>
+Date:   Sat May 24 14:20:47 2025 -0400
+
+    Se arreglo la recepcion de lineas modificadas
+
+[33mcommit 01e7631d2cb6bd4a41c89d20729306c153bbb303[m
+Merge: 12c4a3f e49ea6f
+Author: Alejandro <115193581+AleBustamante@users.noreply.github.com>
+Date:   Mon May 5 10:24:04 2025 -0400
+
+    Merge pull request #19 from UCB-TallerDeDesarrollo/actualizacion_script
+    
+    Actualizacion del script commit-tracker.js y el hook post-commit
+
+[33mcommit e49ea6f98c69844d13dd46fdbc1623696334ec7b[m
+Author: Alejandro Bustamante <adbdc.u@gmail.com>
+Date:   Mon May 5 00:08:57 2025 -0400
+
+    Eliminado script antiguo
+
+[33mcommit f57bf58c0878ccef46e906ef2bbce17c5fc2349d[m
+Author: Alejandro Bustamante <adbdc.u@gmail.com>
+Date:   Sun May 4 23:57:50 2025 -0400
+
+    Actualizacion del commit-tracker solucionando varios bugs
+
+[33mcommit 12c4a3ffdde24dbd30043c668c785c61f5e6d797[m
+Merge: 3c8e70e f00ac01
+Author: Alejandro <115193581+AleBustamante@users.noreply.github.com>
+Date:   Mon Apr 21 17:18:15 2025 -0400
+
+    Merge pull request #18 from UCB-TallerDeDesarrollo/commit-log-script
+    
+    Agregado el script para generar el log de commits
+
+[33mcommit f00ac014752c26ebfc16e5928f7cdaa1897fd476[m
+Author: Alejandro Bustamante <adbdc.u@gmail.com>
+Date:   Sun Apr 20 23:23:49 2025 -0400
+
+    Agregado el script con su respecitivo hook para generar el log con la info de los commits
+
+[33mcommit 3c8e70ea2bcd2a0e578c30b7395efa481673989a[m
+Author: Israel Antezana Rojas <israelantezana@gmail.com>
+Date:   Wed Jan 29 11:56:30 2025 -0400
+
+    Se corrige error al ejecutar cypress
+
+[33mcommit caacb2f10710f44f3fb07e46ce36ae0a101d6848[m
+Merge: 76ae813 52d8512
+Author: RedoRojo <79448423+RedoRojo@users.noreply.github.com>
+Date:   Thu Dec 12 01:06:03 2024 -0400
+
+    Merge pull request #17 from UCB-TallerDeDesarrollo/Fix_Script
+    
+    Fix script para el caso de success
+
+[33mcommit 52d85124862e346866c8c6f8ac63b46083fbaaea[m
+Author: RedoRojo <cristhiabnvictorrm@gmaill.com>
+Date:   Thu Dec 12 01:04:45 2024 -0400
+
+    Se borro mensajes innecesarios
+
+[33mcommit 1fd9cf8085cd041f144994814dfc8c231f733a62[m
+Author: RedoRojo <cristhiabnvictorrm@gmaill.com>
+Date:   Thu Dec 12 01:04:06 2024 -0400
+
+    Fix de errores al generar el tdd_log
+
+[33mcommit 76ae813c19425050cf2dcacdc7e1a1ae741474c3[m
+Merge: 04c8d17 24037c9
+Author: ValeryArauco <141700272+ValeryArauco@users.noreply.github.com>
+Date:   Thu Dec 12 00:45:37 2024 -0400
+
+    Merge pull request #16 from UCB-TallerDeDesarrollo/arreglos_commits_semanticos
+    
+    Refactoring y adicion de validacion de dependencias
+
+[33mcommit 24037c911296525af734f4f363c369cc222534af[m
+Author: ValeryArauco <141700272+ValeryArauco@users.noreply.github.com>
+Date:   Thu Dec 12 00:39:40 2024 -0400
+
+    Refactoring y adicion de validacion de dependencias
+
+[33mcommit 04c8d175a3d4a1e49b5b925516ac94b265a9a2bf[m
+Merge: cba8b27 19ec879
+Author: RedoRojo <79448423+RedoRojo@users.noreply.github.com>
+Date:   Wed Dec 11 23:30:19 2024 -0400
+
+    Merge pull request #15 from UCB-TallerDeDesarrollo/success_field
+    
+    campo success aniadido
+
+[33mcommit 19ec879a59acd28eb9a243bd37564360aa90c627[m
+Author: denilsFiesta <denilson.fiesta@ucb.edu.bo>
+Date:   Wed Dec 11 23:26:09 2024 -0400
+
+    campo success aniadido
+
+[33mcommit cba8b27b807e09fdb1c31a9e1ace3ca40d305291[m
+Merge: 5bf05c5 20a97ab
+Author: Sebastian_Terrazas_Kippes~ <141341014+sebaStkp@users.noreply.github.com>
+Date:   Wed Dec 11 23:25:20 2024 -0400
+
+    Merge pull request #14 from UCB-TallerDeDesarrollo/arreglos_commits_semanticos
+    
+    Arreglos commits semanticos
+
+[33mcommit 20a97ab0325e641eaabf73d2b4617036dbb68d8f[m
+Author: ValeryArauco <141700272+ValeryArauco@users.noreply.github.com>
+Date:   Wed Dec 11 23:22:24 2024 -0400
+
+    Se modificaron los mensajes que se muestran al habilitar commits y si el commit es invalido
+
+[33mcommit 5bf05c55273cf683d58ecf58dd60c3528fa712c6[m
+Merge: e5dffc5 0437144
+Author: RedoRojo <79448423+RedoRojo@users.noreply.github.com>
+Date:   Wed Dec 11 08:06:16 2024 -0400
+
+    Merge pull request #13 from UCB-TallerDeDesarrollo/Fix_commitScript
+    
+    Caso de un primer commit en el tdd-log
+
+[33mcommit 04371448eb7bb20a6a2c215208aba777aad8d9b6[m
+Author: RedoRojo <cristhiabnvictorrm@gmaill.com>
+Date:   Wed Dec 11 08:03:10 2024 -0400
+
+    Caso de un primer commit corregido
+
+[33mcommit e5dffc5677bd77b8c3b8fa7fad546dc183bbc72e[m
+Author: Adriana-Tarquino <99218283+Adriana-Tarquino@users.noreply.github.com>
+Date:   Tue Dec 10 15:01:41 2024 -0400
+
+    Add: test failed
+
+[33mcommit dcd81688ce2f9206b1333f6a8b2f44f46452418d[m
+Merge: d82a1ef 9d4487f
+Author: Adriana-Tarquino <99218283+Adriana-Tarquino@users.noreply.github.com>
+Date:   Tue Dec 10 14:11:20 2024 -0400
+
+    Merge pull request #12 from UCB-TallerDeDesarrollo/punto-azul
+    
+    Cambio en el commitScript para que reciba el nombre del commit
+
+[33mcommit 9d4487f1d791fc2cf23c6e835ea996b508f06665[m
+Author: NicolasVidal03 <nicolas.vidal@ucb.edu.bo>
+Date:   Tue Dec 10 13:56:45 2024 -0400
+
+    Cambio en el commitScript para que reciba el nombre del commit
+
+[33mcommit c1ccbc67811895ed88a69415eeffdbae9ea2c06a[m
+Author: Sebastian Terrazas Kippes <sebastian.terrazas@ucb.edu.bo>
+Date:   Tue Dec 10 01:14:31 2024 -0400
+
+    Se ignora la variable de estado para habilitar o deshabilitar los commits semanticos
+
+[33mcommit 7622b4c4794513874ab33433c23acec786452af7[m
+Author: Sebastian Terrazas Kippes <sebastian.terrazas@ucb.edu.bo>
+Date:   Tue Dec 10 01:13:32 2024 -0400
+
+    Ahora existen 2 comando para habilitar o deshabilitar los commits semanticos: semantic-commits-on y semantic-commits-off
+
+[33mcommit 8f5f96a0cd9836da54b538f0b998f2e2bb23f701[m
+Author: Sebastian Terrazas Kippes <sebastian.terrazas@ucb.edu.bo>
+Date:   Tue Dec 10 01:12:47 2024 -0400
+
+    Se arreglo la incompatibilidad con macs
+
+[33mcommit d82a1efcf6932bb22d57b7052120abcc66b2a892[m
+Merge: c698bf1 99afb2a
+Author: NicolasVidal03 <112001734+NicolasVidal03@users.noreply.github.com>
+Date:   Wed Dec 4 22:53:31 2024 -0400
+
+    Merge pull request #10 from UCB-TallerDeDesarrollo/init
+    
+    Se añadio init al postinstall
+
+[33mcommit 99afb2a48e0f9b3a7bad43e2cca699588ba57877[m
+Author: NicolasVidal03 <nicolas.vidal@ucb.edu.bo>
+Date:   Tue Dec 3 11:50:57 2024 -0400
+
+    Se añadio init al postinstall
+
+[33mcommit c698bf1512d1ae79e7e1ad588a2feab3a4fba4f6[m
+Merge: b5b6f76 279768f
+Author: RedoRojo <79448423+RedoRojo@users.noreply.github.com>
+Date:   Thu Nov 28 02:34:47 2024 -0400
+
+    Merge pull request #9 from UCB-TallerDeDesarrollo/modificacion_package
+    
+    Modificacion package
+
+[33mcommit 279768f1dc41d0bc8a9f122b9176748706482328[m
+Author: KarenAguayo <karen.aguayo@ucb.edu.bo>
+Date:   Thu Nov 28 02:32:34 2024 -0400
+
+    Se cambia el comando tdd-script por test para la ejecucion de pruebas
+
+[33mcommit 48b5c0f0e5f07d8894c3ed4eb303c9912530600e[m
+Author: KarenAguayo <karen.aguayo@ucb.edu.bo>
+Date:   Thu Nov 28 02:30:42 2024 -0400
+
+    Se elimino el comando test-export-json y se modifico el script
+
+[33mcommit 8924bedb0eaa2d16c1952097ffe3de03e222a221[m
+Author: KarenAguayo <karen.aguayo@ucb.edu.bo>
+Date:   Thu Nov 28 02:28:12 2024 -0400
+
+    Se elimino el comando post-install en el package
+
+[33mcommit b5b6f7642787d5791811898ce3d9b3c328751823[m
+Merge: bba64a1 a3d2267
+Author: ValeryArauco <141700272+ValeryArauco@users.noreply.github.com>
+Date:   Thu Nov 28 01:05:17 2024 -0400
+
+    Merge pull request #7 from UCB-TallerDeDesarrollo/semantic-commits
+    
+    commits semanticos añadidos
+
+[33mcommit bba64a148a3ade2c7c60dae74332610405f209a2[m
+Merge: 5bc363a 34a29f5
+Author: CrisCanapi730 <141676779+CrisCanapi730@users.noreply.github.com>
+Date:   Thu Nov 28 00:21:37 2024 -0400
+
+    Merge pull request #8 from UCB-TallerDeDesarrollo/test
+    
+    Correccion de tarea del test-once
+
+[33mcommit 34a29f5c22f42d7fef5eb966f5630fb520f62af3[m
+Author: “Cristian <“cristiancanapi730@gmail.com”>
+Date:   Thu Nov 28 00:21:09 2024 -0400
+
+    Correccion de tarea del test-once
+
+[33mcommit a3d2267fd27669bcec09e332768924148bd50e61[m
+Author: Sebastian Terrazas Kippes <sebastian.terrazas@ucb.edu.bo>
+Date:   Wed Nov 27 23:45:58 2024 -0400
+
+    commits semanticos añadidos
+
+[33mcommit 5bc363abf9643b9961175c360b76be259f634de5[m
+Merge: 4cb3964 9dd801a
+Author: CrisCanapi730 <141676779+CrisCanapi730@users.noreply.github.com>
+Date:   Wed Nov 27 23:43:56 2024 -0400
+
+    Merge pull request #6 from UCB-TallerDeDesarrollo/test
+    
+    Se volvio a añadir el test-once
+
+[33mcommit 9dd801ae101ff9d12e54b253e87698094df4121e[m
+Author: “Cristian <“cristiancanapi730@gmail.com”>
+Date:   Wed Nov 27 23:43:12 2024 -0400
+
+    Se volvio a añadir el test-once
+
+[33mcommit 4cb396447e9ddbbc06d4eef0572aacd69ff549bd[m
+Merge: c1170c5 a53d74f
+Author: RedoRojo <79448423+RedoRojo@users.noreply.github.com>
+Date:   Tue Nov 26 21:54:35 2024 -0400
+
+    Merge pull request #4 from UCB-TallerDeDesarrollo/Mejora_script
+    
+    Se anadio la creacion del log a la hora de correr el script
+
+[33mcommit a53d74f47214e69f6c145ffd1f1d8eeb3c99587b[m
+Author: RedoRojo <cristhiabnvictorrm@gmail.com>
+Date:   Tue Nov 26 21:53:44 2024 -0400
+
+    Se anadio la creacion del log a la hora de correr el script
+
+[33mcommit c1170c563bb3bb897e5c929d97cdf4dc5060d9e8[m
+Merge: 03df5ce 8a89111
+Author: NicolasVidal03 <112001734+NicolasVidal03@users.noreply.github.com>
+Date:   Tue Nov 26 12:13:17 2024 -0400
+
+    Merge pull request #3 from UCB-TallerDeDesarrollo/arreglos-gitignore
+    
+    se añade tdd_log.json y report.json al .gitignore
+
+[33mcommit 8a89111f3152d4e068981190e8b0777923409600[m
+Author: NicolasVidal03 <nicolas.vidal@ucb.edu.bo>
+Date:   Tue Nov 26 12:11:17 2024 -0400
+
+    Git deja de rastrear el tdd_log.json
+
+[33mcommit fabc0975a40379ea21fffbec01cd1fc3569a6c3f[m
+Author: NicolasVidal03 <nicolas.vidal@ucb.edu.bo>
+Date:   Tue Nov 26 12:04:09 2024 -0400
+
+    se añade tdd_log.json y report.json al .gitignore
+
+[33mcommit 03df5ce98d24ecd6ed26b819f41f9e8006f38b6a[m
+Merge: dc309bc ec98d49
+Author: CrisCanapi730 <141676779+CrisCanapi730@users.noreply.github.com>
+Date:   Tue Nov 26 11:50:15 2024 -0400
+
+    Merge pull request #2 from UCB-TallerDeDesarrollo/ramatddlog
+    
+    Eliminando historial nuevamente y test demas
+
+[33mcommit ec98d4908773122b566aba410336d7b11b2493e9[m
+Author: “Cristian <“cristiancanapi730@gmail.com”>
+Date:   Tue Nov 26 11:46:30 2024 -0400
+
+    Eliminando historial nuevamente y test demas
+
+[33mcommit dc309bc5a850344997faaa022c97cdf51f1ec700[m
+Merge: 6ad271c 94bbec1
+Author: CrisCanapi730 <141676779+CrisCanapi730@users.noreply.github.com>
+Date:   Tue Nov 26 11:23:22 2024 -0400
+
+    Merge pull request #1 from UCB-TallerDeDesarrollo/tddlog
+    
+    Tddlog historial eliminado.
+
+[33mcommit 94bbec1c2160c3a00120724d3347cf826a95b431[m
+Author: “Cristian <“cristiancanapi730@gmail.com”>
+Date:   Tue Nov 26 11:22:06 2024 -0400
+
+    problemas oslucionados
+
+[33mcommit 600e7e450aee07e93474e809c010b9526af7acdd[m
+Author: “Cristian <“cristiancanapi730@gmail.com”>
+Date:   Tue Nov 26 11:20:25 2024 -0400
+
+    historial tdd log eliminado
+
+[33mcommit 6ad271c01c2b3db361058c0737c60857bd79fb01[m
+Author: NicolasVidal03 <nicolas.vidal@ucb.edu.bo>
+Date:   Mon Nov 25 22:01:41 2024 -0400
+
+    baseproject
