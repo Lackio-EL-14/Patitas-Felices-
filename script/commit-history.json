@@ -57,17 +57,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f56321e04b180e8311bfc364c4baa4572df02172",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T06:39:55.000Z",
       "message": "fix: intento de arreglar segumiento-mascota",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/f56321e04b180e8311bfc364c4baa4572df02172"
     },
     "stats": {
       "total": 17,
       "additions": 12,
       "deletions": 5,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T06:57:53.000Z",
+      "message": "fix: intento de arreglar segumiento-mascota",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 18,
+      "deletions": 13,
       "date": "2025-11-23"
     },
     "coverage": 70,
