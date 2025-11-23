@@ -1045,17 +1045,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cac830ab1501fd7a2f813dce4bdbd5b83f2fde4d",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T22:08:03.000Z",
       "message": "perf: aumento de data a Adopciones",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/cac830ab1501fd7a2f813dce4bdbd5b83f2fde4d"
     },
     "stats": {
       "total": 77,
       "additions": 76,
       "deletions": 1,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:36:55.000Z",
+      "message": "perf: estilos lost dogs y fix: eliminar login/signin del navbar",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 285,
+      "additions": 217,
+      "deletions": 68,
       "date": "2025-11-23"
     },
     "coverage": 70,

@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perritos Extraviados</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav>
     <div class="logo">
-      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices"
-      style="width: 15% ; height: 80%;" />
-
+      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" style="width: 15% ; height: 80%;" />
     </div>
     <a href="panel-solicitudes-adopcion.html" data-cy="link-panel-solicitudes">
       <h3>Solicitudes de Adopción</h3></a>
-
     <a href="seguimiento-mascota.html" style="text-decoration: none; color: black;" data-cy="link-seguimiento">
       <h3>Seguimiento de Mascotas</h3>
     </a>
-
     <a href="VerAdopciones.html" style="text-decoration: none; color:black">
     <h3>Adopciones</h3>
     </a>
-
     <a href="VerRefugios.html" style="text-decoration: none; color:black">
     <h3>Refugios</h3>
     </a>
-    
     <h3><a href="./lost-dogs.html" style="text-decoration: none; color: black;">Perritos Extraviados</a></h3>
-    <button>Iniciar Sesion</button>
-    <button>Registrarse</button>
+
   </nav>
-  <h1>Perritos Extraviados</h1>
 
-  <label for="departamento-select">Filtrar por departamento:</label>
-  <select id="departamento-select">
-    <option value="">-- Todos --</option>
-    <option value="La Paz">La Paz</option>
-    <option value="Cochabamba">Cochabamba</option>
-    <option value="Santa Cruz">Santa Cruz</option>
-    <option value="Beni">Beni</option>
-    <option value="Pando">Pando</option>
-    <option value="Chuquisaca">Chuquisaca</option>
-    <option value="Oruro">Oruro</option>
-    <option value="Potosí">Potosí</option>
-    <option value="Tarija">Tarija</option>
-  </select>
+  <main class="main-content">
+      <h1 class="page-title">Perritos Extraviados </h1>
 
-  <div id="info-animal"></div>
+      <div class="filter-container">
+        <label for="departamento-select">Filtrar por departamento:</label>
+        <select id="departamento-select">
+          <option value="">-- Ver todos --</option>
+          <option value="La Paz">La Paz</option>
+          <option value="Cochabamba">Cochabamba</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Beni">Beni</option>
+          <option value="Pando">Pando</option>
+          <option value="Chuquisaca">Chuquisaca</option>
+          <option value="Oruro">Oruro</option>
+          <option value="Potosí">Potosí</option>
+          <option value="Tarija">Tarija</option>
+        </select>
+      </div>
+
+      <div id="info-animal" class="grid-container"></div>
+  </main>
+
   <script type="module" src="lost-dogs.js"></script>
 </body>
-
 </html>
