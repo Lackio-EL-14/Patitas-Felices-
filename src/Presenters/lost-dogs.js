@@ -1,4 +1,4 @@
-const dogs = require('./lost-dogs.json');
+const dogs = require('../Data/lost-dogs.json');
 
 const contenedor = document.getElementById('info-animal');
 const select = document.getElementById('departamento-select');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <meta charset="UTF-8">
     <title>Adopciones</title>
     <style>
@@ -28,7 +28,7 @@
 </head>
 <nav>
     <div class="logo">
-      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices"
+      <img src="/imagenes/logo.jpeg" alt="logo Patitas Felices"
       style="width: 15% ; height: 80%;" />
 
     </div>
@@ -45,7 +45,7 @@
     <div id="lista-mascotas"></div>
 
     <script type="module">
-        import renderMascotas from './src/AdopcionesPresenter.js';
+        import renderMascotas from '../Presenters/AdopcionesPresenter.js';
         renderMascotas();
     </script>
 </body>

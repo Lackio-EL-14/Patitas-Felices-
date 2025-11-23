@@ -1,4 +1,4 @@
-import obtenerMascotas from "../Adopciones";
+import obtenerMascotas from '../Presenters/Adopciones';
 
 describe("Ver perritos en adopcion", () => {
     it("deberia retornar un arreglo", () => {
