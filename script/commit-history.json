@@ -1121,17 +1121,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe0d0da96e3231083f9decac071096490d434dbb",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T23:06:15.000Z",
       "message": "perf: aumentar imágenes en lost-dogs",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/fe0d0da96e3231083f9decac071096490d434dbb"
     },
     "stats": {
       "total": 28,
       "additions": 14,
       "deletions": 14,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:07:20.000Z",
+      "message": "fix: bug adopciones presenter",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 15,
+      "deletions": 45,
       "date": "2025-11-23"
     },
     "coverage": 70,
