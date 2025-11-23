@@ -950,17 +950,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "276be3cb986b9208e0bc2d2415035597b37e45ac",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T21:17:40.000Z",
       "message": "fix: navbar en todas las vistas",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/276be3cb986b9208e0bc2d2415035597b37e45ac"
     },
     "stats": {
       "total": 107,
       "additions": 100,
       "deletions": 7,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:25:45.000Z",
+      "message": "feat: buscar mascotas para adopción",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 52,
+      "deletions": 14,
       "date": "2025-11-23"
     },
     "coverage": 70,
