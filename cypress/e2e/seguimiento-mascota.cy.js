@@ -3,24 +3,29 @@
 
 describe('Seguimiento de mascota adoptada', () => {
 
-  it('debería subir y mostrar la foto', () => {
-    cy.visit('/seguimiento-mascota.html');
-
-    cy.window().then((win) => {
-      // Si no existe, la defines vacía antes de stubear
+it('debería subir y mostrar la foto', () => {
+  cy.visit('/seguimiento-mascota.html', {
+    onBeforeLoad(win) {
+      // Garantiza que la propiedad exista para poder stubearla
       if (!win.subirFoto) {
-        win.subirFoto = () => { };
+        win.subirFoto = () => {};
       }
-      cy.stub(win, 'subirFoto').resolves({ url: 'ruta-mock.jpg' });
-    });
-
-    cy.get('[data-cy="input-descripcion"]').type('Esta es una descripción de prueba.');
-    cy.get('[data-cy="input-foto"]').attachFile('foto-test.jpg');
-    cy.get('[data-cy="btn-subir"]').click();
-
-    cy.get('[data-cy="contenedor-fotos"] img')
-      .should('have.attr', 'src', 'ruta-mock.jpg');
+    },
   });
+
+  cy.get('[data-cy="btn-subir"]').should('exist'); // la UI cargó
+
+  cy.window().then((win) => {
+    cy.stub(win, 'subirFoto').resolves({ url: 'ruta-mock.jpg' });
+  });
+
+  cy.get('[data-cy="input-descripcion"]').type('Esta es una descripción de prueba.');
+  cy.get('[data-cy="input-foto"]').attachFile('foto-test.jpg');
+  cy.get('[data-cy="btn-subir"]').click();
+
+  cy.get('[data-cy="contenedor-fotos"] img')
+    .should('have.attr', 'src', 'ruta-mock.jpg');
+});
 
   it('debería subir una foto con una descripción y mostrar ambas', () => {
     cy.visit('/seguimiento-mascota.html');
