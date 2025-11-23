@@ -1007,17 +1007,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "53a50d6d7c69f4526745a4b487e6fc6bdb3f6208",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T21:49:27.000Z",
       "message": "refactor panel-solicitudes-adopcion.html",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/53a50d6d7c69f4526745a4b487e6fc6bdb3f6208"
     },
     "stats": {
       "total": 215,
       "additions": 112,
       "deletions": 103,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:55:54.000Z",
+      "message": "refactor: seguimeto-mascota.js",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 149,
+      "additions": 103,
+      "deletions": 46,
       "date": "2025-11-23"
     },
     "coverage": 70,
