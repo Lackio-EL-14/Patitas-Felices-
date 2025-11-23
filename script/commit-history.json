@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cce709e657d22fabc81a397a27ec93073cb632ec",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-20T14:14:58.000Z",
       "message": "feat: Creacion de archivos base para iniciar con la historia de usuario : Buscar Refugio",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/cce709e657d22fabc81a397a27ec93073cb632ec"
     },
     "stats": {
       "total": 11,
@@ -125,6 +125,25 @@
       "total": 11,
       "additions": 0,
       "deletions": 11,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T07:39:15.000Z",
+      "message": "refactor: adopciones presenter",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 9,
+      "deletions": 9,
       "date": "2025-11-23"
     },
     "coverage": 70,
