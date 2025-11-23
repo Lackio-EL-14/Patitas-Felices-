@@ -1064,17 +1064,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9dc81fa6bd5788754c98cb4a5812e3178620f085",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T22:36:55.000Z",
       "message": "perf: estilos lost dogs y fix: eliminar login/signin del navbar",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/9dc81fa6bd5788754c98cb4a5812e3178620f085"
     },
     "stats": {
       "total": 285,
       "additions": 217,
       "deletions": 68,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:45:16.000Z",
+      "message": "perf: estilos navbar",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 329,
+      "additions": 185,
+      "deletions": 144,
       "date": "2025-11-23"
     },
     "coverage": 70,

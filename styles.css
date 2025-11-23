@@ -1,16 +1,103 @@
-h2{
-    width:9rem;
-    height: 5rem;
-    background-color: gray;
-    margin: 3rem;
-    padding: 4rem;
-}
-nav{
-    display: flex;
-     justify-content:  space-around;
-    
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #ffffff;
+    padding: 10px 40px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
 }
 
+
+.logo-img {
+    height: 60px; 
+    width: auto;  
+    display: block;
+    border-radius: 50%; 
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px; 
+    align-items: center;
+}
+
+
+.nav-item {
+    text-decoration: none;
+    color: #555; 
+    font-weight: 600; 
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+
+.nav-item:hover {
+    color: #e67e22; 
+}
+
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #e67e22;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+
+.nav-item.active {
+    color: #e67e22;
+}
+.nav-item.active::after {
+    width: 100%; 
+}
+
+
+.btn-login {
+    background-color: transparent;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        padding: 15px;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .auth-buttons {
+        margin-top: 15px;
+    }
+}
 /* estilos para lost dogs view */
 .main-content {
     max-width: 1200px;
