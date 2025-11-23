@@ -988,17 +988,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c0144402aeb136626f8991944b517e9012367274",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T21:31:25.000Z",
       "message": "feat: ver rendimiento en todas las ramas",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/c0144402aeb136626f8991944b517e9012367274"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:49:27.000Z",
+      "message": "refactor panel-solicitudes-adopcion.html",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 215,
+      "additions": 112,
+      "deletions": 103,
       "date": "2025-11-23"
     },
     "coverage": 70,
