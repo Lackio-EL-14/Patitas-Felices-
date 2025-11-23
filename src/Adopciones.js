@@ -1,4 +1,4 @@
-function obtenerMascotas(){   
+function obtenerMascotas(){    
     return [
         {
             id: 1,
@@ -29,6 +29,81 @@ function obtenerMascotas(){
             id: 6,
             nombre: 'Molly',
             imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Kira%2C_a_tortoise_shell_cat.jpg/500px-Kira%2C_a_tortoise_shell_cat.jpg"
+        },
+        {
+            id: 7,
+            nombre: 'Toby',
+            imagen: "https://th.bing.com/th/id/R.a28ae3dd28116470526b4e9000a3b29e?rik=4xKMNuOtT8tQ3g&riu=http%3a%2f%2fwww.blogerin.com%2fwp-content%2fuploads%2f2012%2f10%2fFotos-tiernas-de-perritos-wallpapers-4.jpg&ehk=Sl%2flBA7kUSkV8thXHzpR81zrKJcGRlph1%2f%2bUBwBTm28%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            id: 8,
+            nombre: 'Nala',
+            imagen: "https://www.qcosas.com/wp-content/uploads/2014/07/miradas-tiernas-perros15.jpg"
+        },
+        {
+            id: 9,
+            nombre: 'Simba',
+            imagen: "https://static.wixstatic.com/media/48e0b1_e7e5139e44aa445c99c6556e91f7b4fe~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_auto/48e0b1_e7e5139e44aa445c99c6556e91f7b4fe~mv2.webp"
+        },
+        {
+            id: 10,
+            nombre: 'Coco',
+            imagen: "https://misfitanimals.com/wp-content/uploads/2022/05/Angular-limb-deformity.jpg"
+        },
+        {
+            id: 11,
+            nombre: 'Bella',
+            imagen: "https://tse4.mm.bing.net/th/id/OIP.4MLco8bIL6m5eUHEwuGQVAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            id: 12,
+            nombre: 'Chispa',
+            imagen: "https://tse1.mm.bing.net/th/id/OIP.5VPLuGbgbPKQKhgJ8JsMhQHaIA?rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            id: 13,
+            nombre: 'Tommy',
+            imagen: "https://th.bing.com/th/id/R.6da2c767caebd7e7817333d2491ce2cb?rik=ElR0VPohUF%2fhQg&pid=ImgRaw&r=0"
+        },
+        {
+            id: 14,
+            nombre: 'Michi',
+            imagen: "https://tse3.mm.bing.net/th/id/OIP.vidoUiMp8vHQY4EmHtIK-gHaEW?rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            id: 15,
+            nombre: 'Bruno',
+            imagen: "https://tse4.mm.bing.net/th/id/OIP.gQgP0_R8Ua3-3qnb-dE9xwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            id: 16,
+            nombre: 'Akira',
+            imagen: "https://1.bp.blogspot.com/-UgUFFxhjAVs/TYD5wFPuVWI/AAAAAAAAZy0/iLAkAhZVIR0/s1600/www.JoseLuisAvilaHerrera.Blogspot.com%2B-%2BFotograf%25C3%25ADas%2Bde%2Bperros%2By%2Bcachorros%2B48.jpg"
+        },
+        {
+            id: 17,
+            nombre: 'Daisy',
+            imagen: "https://i.pinimg.com/originals/a3/c2/ac/a3c2ac3020ee24a6037aeb358e2d5924.jpg"
+        },
+        {
+            id: 18,
+            nombre: 'Zeus',
+            imagen: "https://th.bing.com/th?q=Fotos%20De%20Perro&pid=ImgDet&w=150&h=150&c=1&p=1&rs=1&t=1&dpr=1,5&mkt=es-xl&adlt=strict&o=7&rm=3"
+        },
+        {
+            id: 19,
+            nombre: 'Chloe',
+            imagen: "https://tse2.mm.bing.net/th/id/OIP.pf8EmXUFv4B8ZNtKaduI8QHaHH?w=640&h=615&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            id: 20,
+            nombre: 'Leo',
+            imagen: "https://i.etsystatic.com/iusa/29f8e1/85659186/iusa_600x600.85659186_kh6g.jpg?version=0"
+        },
+        {
+            id: 21,
+            nombre: 'Sasha',
+            imagen: "https://www.boredpanda.com/blog/wp-content/uploads/2024/10/C0c_MOfKO8R-png__880.jpg"
         },
     ];
 };
