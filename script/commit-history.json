@@ -1140,17 +1140,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff34b869791d5c5b51298694b52eb5f76ecc1e0e",
     "author": "Camila",
     "commit": {
       "date": "2025-11-23T23:07:20.000Z",
       "message": "fix: bug adopciones presenter",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ff34b869791d5c5b51298694b52eb5f76ecc1e0e"
     },
     "stats": {
       "total": 60,
       "additions": 15,
       "deletions": 45,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:10:40.000Z",
+      "message": "fix: bug panel-solicitudes",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 199,
+      "additions": 87,
+      "deletions": 112,
       "date": "2025-11-23"
     },
     "coverage": 70,

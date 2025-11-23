@@ -1,140 +1,115 @@
-import {getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud} from "../src/Ejemplos base/Services/solicitudesService.js";
+import { getSolicitudes, getDetalleSolicitud, aprobarSolicitud, rechazarSolicitud } from "../src/Ejemplos base/Services/solicitudesService.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const contenedor = document.getElementById('lista-solicitudes');
-    
-    try {
-        const solicitudes = await getSolicitudes();
-        
-        if (!solicitudes || solicitudes.length === 0) {
-            contenedor.innerHTML = '<p>No hay solicitudes registradas.</p>';
-            return;
-        }
-        contenedor.innerHTML = '';       
-
-        const fragmento = document.createDocumentFragment();
-
-        solicitudes.forEach(sol => {
-            const tarjeta = crearTarjetaSolicitud(sol);
-            fragmento.appendChild(tarjeta);
-        });
-
-        contenedor.appendChild(fragmento);
-
-    } catch (error) {
-        console.error(error);
-        contenedor.innerHTML = 'Error al cargar solicitudes.';
+  const contenedor = document.getElementById('lista-solicitudes');
+  try {
+    const solicitudes = await getSolicitudes();
+    if (!solicitudes || solicitudes.length === 0) {
+      contenedor.innerHTML = '<p>No hay solicitudes registradas.</p>';
+      return;
     }
+    renderSolicitudes(solicitudes, contenedor);
+  } catch (error) {
+    contenedor.innerHTML = 'Error al cargar solicitudes.';
+  }
 });
 
 
-function crearTarjetaSolicitud(sol) {
-    const div = document.createElement('div');
-    div.className = 'solicitud';
-    div.dataset.cy = `solicitud-${sol.id}`;
+function renderSolicitudes(solicitudes, contenedor) {
+  contenedor.innerHTML = ''; 
 
-
-    div.innerHTML = `
-        <p>Adoptante: ${escaparHtml(sol.nombre)}</p>
-        <p>Mascota: ${escaparHtml(sol.mascota)}</p>
+  solicitudes.forEach(sol => {
+    contenedor.innerHTML += `
+      <div class="solicitud" data-cy="solicitud-${sol.id}">
+        <p>Adoptante: ${sol.nombre}</p>
+        <p>Mascota: ${sol.mascota}</p>
+        <p data-cy="estado-${sol.id}">Estado: Pendiente</p>
+        <button data-cy="btn-detalle-${sol.id}">Ver Detalle</button>
+        <button data-cy="btn-aprobar-${sol.id}">Aprobar</button>
+        <button data-cy="btn-rechazar-${sol.id}">Rechazar</button>
+      </div>
     `;
+  });
 
-
-    const pEstado = document.createElement('p');
-    pEstado.dataset.cy = `estado-${sol.id}`;
-    pEstado.textContent = 'Estado: Pendiente';
-    div.appendChild(pEstado);
-
-    // Botones
-    const btnDetalle = document.createElement('button');
-    btnDetalle.textContent = 'Ver Detalle';
-    btnDetalle.dataset.cy = `btn-detalle-${sol.id}`;
-    
-    const btnAprobar = document.createElement('button');
-    btnAprobar.textContent = 'Aprobar';
-    btnAprobar.dataset.cy = `btn-aprobar-${sol.id}`;
-    
-    const btnRechazar = document.createElement('button');
-    btnRechazar.textContent = 'Rechazar';
-    btnRechazar.dataset.cy = `btn-rechazar-${sol.id}`;
-
-
-
-    btnDetalle.addEventListener('click', async () => {
-        const detalle = await getDetalleSolicitud(sol.id);
-        mostrarModal(detalle);
+   solicitudes.forEach(sol => {
+    document.querySelector(`[data-cy="btn-detalle-${sol.id}"]`).addEventListener('click', async () => {
+      const detalle = await getDetalleSolicitud(sol.id);
+      mostrarModal(detalle);
     });
 
+    document.querySelector(`[data-cy="btn-aprobar-${sol.id}"]`).addEventListener('click', async (e) => {
+      const btnAprobar = e.target;
+      const btnRechazar = document.querySelector(`[data-cy="btn-rechazar-${sol.id}"]`);
+      const estado = document.querySelector(`[data-cy="estado-${sol.id}"]`);
 
-    btnAprobar.addEventListener('click', () => 
-        manejarCambioEstado(sol.id, aprobarSolicitud, 'Aprobada', pEstado, btnAprobar, btnRechazar)
-    );
-
-    btnRechazar.addEventListener('click', () => 
-        manejarCambioEstado(sol.id, rechazarSolicitud, 'Rechazada', pEstado, btnAprobar, btnRechazar)
-    );
-
-    div.append(btnDetalle, btnAprobar, btnRechazar);
-    return div;
-}
-
-
-async function manejarCambioEstado(id, servicioFn, textoNuevoEstado, elEstado, btnAprobar, btnRechazar) {
-    try {
-        await servicioFn(id);
-        elEstado.textContent = `Estado: ${textoNuevoEstado}`;
+      try {
+        await aprobarSolicitud(sol.id);
         btnAprobar.disabled = true;
         btnRechazar.disabled = true;
-    } catch (error) {
-        alert(`Error al intentar cambiar el estado a ${textoNuevoEstado}.`);
-    }
-}
+        if (estado) estado.textContent = 'Estado: Aprobada';
+      } catch {
+        alert('Error al aprobar la solicitud.');
+      }
+    });
+    document.querySelector(`[data-cy="btn-rechazar-${sol.id}"]`).addEventListener('click', async (e) => {
+      const btnAprobar = document.querySelector(`[data-cy="btn-aprobar-${sol.id}"]`);
+      const btnRechazar = e.target;
+      const estado = document.querySelector(`[data-cy="estado-${sol.id}"]`);
 
+      try {
+        await rechazarSolicitud(sol.id);
+        btnAprobar.disabled = true;
+        btnRechazar.disabled = true;
+        if (estado) estado.textContent = 'Estado: Rechazada';
+      } catch {
+        alert('Error al rechazar la solicitud.');
+      }
+    });
+  });
+}
 
 function mostrarModal(detalle) {
-    let modal = document.getElementById('modal-detalle');
+  let modal = document.getElementById('modal-detalle');
 
-    if (!modal) {
-        modal = crearEstructuraModal();
-        document.body.appendChild(modal);
-    }
-
-    document.getElementById('modal-email').textContent = `Email: ${detalle.email}`;
-    document.getElementById('modal-motivo').textContent = `Motivo: ${detalle.motivo}`;
-    modal.style.display = 'flex';
-}
-
-function crearEstructuraModal() {
-    const modal = document.createElement('div');
+  // Crear modal si no existe aún
+  if (!modal) {
+    modal = document.createElement('div');
     modal.id = 'modal-detalle';
-    modal.className = 'modal-overlay'; 
-    
-    Object.assign(modal.style, {
-        position: 'fixed', top: '0', left: '0', width: '100%', height: '100%',
-        background: 'rgba(0, 0, 0, 0.6)', display: 'none', 
-        justifyContent: 'center', alignItems: 'center', zIndex: '1000'
-    });
+    modal.classList.add('modal');
+    modal.style.position = 'fixed';
+    modal.style.top = '0';
+    modal.style.left = '0';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.background = 'rgba(0, 0, 0, 0.6)';
+    modal.style.display = 'none';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.zIndex = '1000';
 
     modal.innerHTML = `
-        <div style="background: white; padding: 20px; border-radius: 8px; width: 300px; text-align: center;">
-            <h3>Detalle de la Solicitud</h3>
-            <p id="modal-email"></p>
-            <p id="modal-motivo"></p>
-            <button id="cerrar-modal">Cerrar</button>
-        </div>
+      <div id="modal-contenido" style="
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+      ">
+        <h3>Detalle de la Solicitud</h3>
+        <p id="modal-email"></p>
+        <p id="modal-motivo"></p>
+        <button id="cerrar-modal">Cerrar</button>
+      </div>
     `;
 
+    document.body.appendChild(modal);
+
     modal.querySelector('#cerrar-modal').addEventListener('click', () => {
-        modal.style.display = 'none';
+      modal.style.display = 'none';
     });
+  }
 
-    return modal;
-}
-
-
-function escaparHtml(text) {
-    if (!text) return text;
-    return text.replace(/[&<>"']/g, function(m) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
-    });
+  modal.querySelector('#modal-email').textContent = `Email: ${detalle.email}`;
+  modal.querySelector('#modal-motivo').textContent = `Motivo: ${detalle.motivo}`;
+  modal.style.display = 'flex';
 }
