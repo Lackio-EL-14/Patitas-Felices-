@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Adopciones</title>
-    <style>
-        /* Estilos mínimos para que se vea ordenado */
-        #lista-mascotas {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .tarjeta-mascota {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 10px;
-            width: 220px;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-
-        .tarjeta-mascota img {
-            border-radius: 6px;
-        }
-    </style>
+    <link href="ver-adopciones.css" rel="stylesheet" type="text/css">
 </head>
-<nav>
+<nav class="navbar">
     <div class="logo">
-      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices"
-      style="width: 15% ; height: 80%;" />
-
+        <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" class="logo-img" />
     </div>
-    <h3>Solicitudes de Adopción</h3>
-    <a href="VerAdopciones.html" style="text-decoration: none; color: black;">
-    <h3>Adopciones</h3>
-    </a>
-    <h3><a href="./lost-dogs.html" style="text-decoration: none; color: black;">Perritos Extraviados</a></h3>
-    <button>Iniciar Sesion</button>
-    <button>Registrarse</button>
-  </nav>
+
+    <div class="nav-links">
+        <a href="panel-solicitudes-adopcion.html" class="nav-item">Solicitudes</a>
+        <a href="seguimiento-mascota.html" class="nav-item">Seguimiento</a>
+        <a href="VerAdopciones.html" class="nav-item">Adopciones</a>
+        <a href="VerRefugios.html" class="nav-item">Refugios</a>
+
+        <a href="./lost-dogs.html" class="nav-item active">Extraviados</a>
+    </div>
+
+
+</nav>
+
 <body>
     <h1>Sección de Adopciones</h1>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <input type="text" id="input-busqueda" placeholder="Buscar mascota por nombre..."
+            style="padding: 10px; width: 300px; font-size: 16px;">
+    </div>
     <div id="lista-mascotas"></div>
 
     <script type="module">
@@ -49,4 +37,5 @@
         renderMascotas();
     </script>
 </body>
+
 </html>

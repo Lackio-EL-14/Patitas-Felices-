@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seguimiento de Mascotas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <nav>
+  <nav class="navbar">
     <div class="logo">
-      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" style="width: 15%; height: 80%;" />
+      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" class="logo-img" />
     </div>
-    <a href="seguimiento-mascota.html" style="text-decoration: none; color: black;" data-cy="link-seguimiento">
-      <h3>Seguimiento de Mascotas</h3>
-    </a>
+
+    <div class="nav-links">
+      <a href="panel-solicitudes-adopcion.html" class="nav-item">Solicitudes</a>
+      <a href="seguimiento-mascota.html" class="nav-item">Seguimiento</a>
+      <a href="VerAdopciones.html" class="nav-item">Adopciones</a>
+      <a href="VerRefugios.html" class="nav-item">Refugios</a>
+
+      <a href="./lost-dogs.html" class="nav-item active">Extraviados</a>
+    </div>
+
   </nav>
 
   <main>
     <h2>Seguimiento de Mascotas</h2>
-    <div 
-      id="recordatorio"
-      data-cy="recordatorio" 
-      style="display: none; background-color: #fff3cd; color: #856404; padding: 15px; border: 1px solid #ffeeba; border-radius: 5px; margin-bottom: 20px;"
-    >
+    <div id="recordatorio" data-cy="recordatorio"
+      style="display: none; background-color: #fff3cd; color: #856404; padding: 15px; border: 1px solid #ffeeba; border-radius: 5px; margin-bottom: 20px;">
       ¡Hola! Ya ha pasado un tiempo. Es hora de subir una nueva foto de tu mascota para que podamos seguir su progreso.
     </div>
-  
+
     <label for="input-descripcion">Descripción:</label>
-    <textarea 
-      id="input-descripcion" 
-      data-cy="input-descripcion" 
-      rows="4" 
-      placeholder="Cuéntanos cómo está tu mascota..."
-    ></textarea>
-    
+    <textarea id="input-descripcion" data-cy="input-descripcion" rows="4"
+      placeholder="Cuéntanos cómo está tu mascota..."></textarea>
+
     <br><br>
 
     <label for="input-foto">Sube una foto:</label>
@@ -47,4 +49,5 @@
 
   <script type="module" src="script/seguimiento-mascota.js"></script>
 </body>
+
 </html>
