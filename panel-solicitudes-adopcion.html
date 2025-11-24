@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Panel de Solicitudes de Adopción</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="imagenes/logo.jpeg" alt="logo Patitas Felices" class="logo-img" />
+    </div>
+
+    <div class="nav-links">
+      <a href="panel-solicitudes-adopcion.html" class="nav-item">Solicitudes</a>
+      <a href="seguimiento-mascota.html" class="nav-item">Seguimiento</a>
+      <a href="VerAdopciones.html" class="nav-item">Adopciones</a>
+      <a href="VerRefugios.html" class="nav-item">Refugios</a>
+
+      <a href="./lost-dogs.html" class="nav-item active">Extraviados</a>
+    </div>
+
+  </nav>
   <h1>Solicitudes de Adopción</h1>
   <div id="lista-solicitudes">Cargando...</div>
 
   <script type="module" src="script/panel-solicitudes-adopcion.js"></script>
 </body>
+
 </html>

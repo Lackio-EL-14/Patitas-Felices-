@@ -931,17 +931,302 @@
     "conclusion": "success"
   },
   {
+    "sha": "da50114dde8a7b72d3777d65db9a6a1b2c01bf8e",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:07:32.000Z",
+      "message": "refactor: hoja de estilos de ver-adpociones",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/da50114dde8a7b72d3777d65db9a6a1b2c01bf8e"
+    },
+    "stats": {
+      "total": 830,
+      "additions": 809,
+      "deletions": 21,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "276be3cb986b9208e0bc2d2415035597b37e45ac",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:17:40.000Z",
+      "message": "fix: navbar en todas las vistas",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/276be3cb986b9208e0bc2d2415035597b37e45ac"
+    },
+    "stats": {
+      "total": 107,
+      "additions": 100,
+      "deletions": 7,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "125263626a98ea767d315334c37eb97aae27c511",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:25:45.000Z",
+      "message": "feat: buscar mascotas para adopción",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/125263626a98ea767d315334c37eb97aae27c511"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 52,
+      "deletions": 14,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c0144402aeb136626f8991944b517e9012367274",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:31:25.000Z",
+      "message": "feat: ver rendimiento en todas las ramas",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/c0144402aeb136626f8991944b517e9012367274"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "53a50d6d7c69f4526745a4b487e6fc6bdb3f6208",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:49:27.000Z",
+      "message": "refactor panel-solicitudes-adopcion.html",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/53a50d6d7c69f4526745a4b487e6fc6bdb3f6208"
+    },
+    "stats": {
+      "total": 215,
+      "additions": 112,
+      "deletions": 103,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "517f83b5a463eb2d2cbf2144720ada8b988f57b0",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T21:55:54.000Z",
+      "message": "refactor: seguimeto-mascota.js",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/517f83b5a463eb2d2cbf2144720ada8b988f57b0"
+    },
+    "stats": {
+      "total": 149,
+      "additions": 103,
+      "deletions": 46,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cac830ab1501fd7a2f813dce4bdbd5b83f2fde4d",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:08:03.000Z",
+      "message": "perf: aumento de data a Adopciones",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/cac830ab1501fd7a2f813dce4bdbd5b83f2fde4d"
+    },
+    "stats": {
+      "total": 77,
+      "additions": 76,
+      "deletions": 1,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9dc81fa6bd5788754c98cb4a5812e3178620f085",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:36:55.000Z",
+      "message": "perf: estilos lost dogs y fix: eliminar login/signin del navbar",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/9dc81fa6bd5788754c98cb4a5812e3178620f085"
+    },
+    "stats": {
+      "total": 285,
+      "additions": 217,
+      "deletions": 68,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4e1dd79df4fdbb6ba4ec188bb3d989f39f8d0c5f",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:45:16.000Z",
+      "message": "perf: estilos navbar",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/4e1dd79df4fdbb6ba4ec188bb3d989f39f8d0c5f"
+    },
+    "stats": {
+      "total": 329,
+      "additions": 185,
+      "deletions": 144,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7917139922c9c5d7f9aecb89d856306a7a548801",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T22:56:42.000Z",
+      "message": "refactor: adopciones presenter",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/7917139922c9c5d7f9aecb89d856306a7a548801"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 39,
+      "deletions": 23,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fe0d0da96e3231083f9decac071096490d434dbb",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:06:15.000Z",
+      "message": "perf: aumentar imágenes en lost-dogs",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/fe0d0da96e3231083f9decac071096490d434dbb"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 14,
+      "deletions": 14,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ff34b869791d5c5b51298694b52eb5f76ecc1e0e",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:07:20.000Z",
+      "message": "fix: bug adopciones presenter",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ff34b869791d5c5b51298694b52eb5f76ecc1e0e"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 15,
+      "deletions": 45,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c1620127fb834efc3e55e31a61131ea5238ac374",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:10:40.000Z",
+      "message": "fix: bug panel-solicitudes",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/c1620127fb834efc3e55e31a61131ea5238ac374"
+    },
+    "stats": {
+      "total": 199,
+      "additions": 87,
+      "deletions": 112,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "383ff041758868fe811a364d245498ae0ba3112a",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:14:41.000Z",
+      "message": "fix: bug panel-solicitudes",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/383ff041758868fe811a364d245498ae0ba3112a"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9f69fb2266747be4685b7dc564c4040b49c35030",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-23T23:17:51.000Z",
+      "message": "fix: bug panel-solicitudes",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/9f69fb2266747be4685b7dc564c4040b49c35030"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
+      "date": "2025-11-23"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
     "sha": "HEAD",
     "author": "Lackio-EL-14",
     "commit": {
-      "date": "2025-11-24T05:39:37.000Z",
-      "message": "feat: creacion de archivos base para comenzar con la historia de usuario de Buscar-refugio",
+      "date": "2025-11-24T05:45:15.000Z",
+      "message": "Merge branch 'main' into buscar-refugios",
       "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
     },
     "stats": {
-      "total": 0,
-      "additions": 0,
-      "deletions": 0,
+      "total": 1601,
+      "additions": 1406,
+      "deletions": 195,
       "date": "2025-11-24"
     },
     "coverage": 70,
