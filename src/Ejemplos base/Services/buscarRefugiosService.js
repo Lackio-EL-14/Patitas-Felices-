@@ -12,6 +12,15 @@ export default function buscarRefugiosService(refugioRepository) {
       return refugioRepository.obtenerTodos().filter(refugio => 
         refugio.nombre.toLowerCase().includes(nombreLowerCase)
       );
+    }, 
+    filtrarPorDepartamento(departamento) {
+      if (!departamento || departamento.trim() === '' || departamento === 'Todos') {
+        return refugioRepository.obtenerTodos();
+      }
+      
+      return refugioRepository.obtenerTodos().filter(refugio => 
+        refugio.departamento === departamento
+      );
     }
   };
 }

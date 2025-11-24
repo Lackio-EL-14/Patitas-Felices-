@@ -51,4 +51,32 @@ describe('buscarRefugiosService', () => {
     
     expect(refugios.length).toBe(5);
   });
+
+  it('debe filtrar refugios por departamento "La Paz"', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorDepartamento('La Paz');
+    
+    expect(refugios.length).toBe(2);
+    refugios.forEach(refugio => {
+      expect(refugio.departamento).toBe('La Paz');
+    });
+  });
+
+  it('debe filtrar refugios por departamento "Cochabamba"', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorDepartamento('Cochabamba');
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].departamento).toBe('Cochabamba');
+  });
+
+  it('debe retornar todos los refugios si el departamento está vacío o es "Todos"', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    
+    expect(service.filtrarPorDepartamento('').length).toBe(5);
+    expect(service.filtrarPorDepartamento('Todos').length).toBe(5);
+  });
 });

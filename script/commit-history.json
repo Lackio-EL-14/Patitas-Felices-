@@ -1368,12 +1368,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60a302b2d473d5b4635a753e6714a2ff37373b98",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:34:28.000Z",
       "message": "feat: implementar filtrado en tiempo real por nombre del refugio",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/60a302b2d473d5b4635a753e6714a2ff37373b98"
     },
     "stats": {
       "total": 32,
@@ -1383,6 +1383,25 @@
     },
     "coverage": 77.78,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:52:54.000Z",
+      "message": "feat: agregar método filtrarPorDepartamento",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 80,
+      "additions": 79,
+      "deletions": 1,
+      "date": "2025-11-24"
+    },
+    "coverage": 79.31,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -38,3 +38,44 @@ describe('Buscar Refugios - Filtrar por nombre', () => {
     cy.get('[data-testid="refugio-item"]').should('have.length', 5);
   });
 });
+
+describe('Buscar Refugios - Filtrar por departamento', () => {
+  it('debe mostrar un selector de departamento', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').should('exist');
+  });
+
+  it('debe filtrar refugios al seleccionar "La Paz"', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('La Paz');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 2);
+    cy.get('[data-testid="refugio-item"]').each(($el) => {
+      cy.wrap($el).should('contain', 'La Paz');
+    });
+  });
+
+  it('debe filtrar refugios al seleccionar "Cochabamba"', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('Cochabamba');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 1);
+    cy.get('[data-testid="refugio-item"]').first().should('contain', 'Cochabamba');
+  });
+
+  it('debe mostrar todos los refugios al seleccionar "Todos"', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('La Paz');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 2);
+    cy.get('[data-testid="select-departamento"]').select('Todos');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 5);
+  });
+
+  it('debe combinar filtros de nombre y departamento', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('La Paz');
+    cy.get('[data-testid="input-nombre"]').type('Esperanza');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 1);
+    cy.get('[data-testid="refugio-item"]').first().should('contain', 'Esperanza');
+    cy.get('[data-testid="refugio-item"]').first().should('contain', 'La Paz');
+  });
+});
+
