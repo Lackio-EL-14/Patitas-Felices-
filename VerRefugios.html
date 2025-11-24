@@ -40,19 +40,29 @@
 
   const repository = new RefugioRepository();
   const service = buscarRefugiosService(repository);
-  const refugios = service.obtenerTodosLosRefugios();
-
-  const listaRefugios = document.getElementById('lista-refugios');
   
-  refugios.forEach(refugio => {
-    const refugioDiv = document.createElement('div');
-    refugioDiv.setAttribute('data-testid', 'refugio-item');
-    refugioDiv.innerHTML = `
-      <h3>${refugio.nombre}</h3>
-      <p>Departamento: ${refugio.departamento}</p>
-      <p>Mascotas: ${refugio.capacidad}</p>
-    `;
-    listaRefugios.appendChild(refugioDiv);
+  function mostrarRefugios(refugios) {
+    const listaRefugios = document.getElementById('lista-refugios');
+    listaRefugios.innerHTML = '';
+    
+    refugios.forEach(refugio => {
+      const refugioDiv = document.createElement('div');
+      refugioDiv.setAttribute('data-testid', 'refugio-item');
+      refugioDiv.innerHTML = `
+        <h3>${refugio.nombre}</h3>
+        <p>Departamento: ${refugio.departamento}</p>
+        <p>Mascotas: ${refugio.capacidad}</p>
+      `;
+      listaRefugios.appendChild(refugioDiv);
+    });
+  }
+
+  mostrarRefugios(service.obtenerTodosLosRefugios());
+  
+  const inputNombre = document.getElementById('filtro-nombre');
+  inputNombre.addEventListener('input', (e) => {
+    const refugiosFiltrados = service.filtrarPorNombre(e.target.value);
+    mostrarRefugios(refugiosFiltrados);
   });
 </script>
 

@@ -1349,17 +1349,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4e9ad808794c493cb4346b27918a0706e9350840",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:30:18.000Z",
       "message": "feat: agregar campo de búsqueda por nombre en la interfaz",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/4e9ad808794c493cb4346b27918a0706e9350840"
     },
     "stats": {
       "total": 10,
       "additions": 10,
       "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 77.78,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:34:28.000Z",
+      "message": "feat: implementar filtrado en tiempo real por nombre del refugio",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 21,
+      "deletions": 11,
       "date": "2025-11-24"
     },
     "coverage": 77.78,
