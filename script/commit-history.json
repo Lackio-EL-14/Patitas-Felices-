@@ -1273,12 +1273,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "96ff31ffec01e5e6bb65827762a70fec102f38b8",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:13:08.000Z",
       "message": "feat: agregar RefugioRepository con datos de 5 refugios",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/96ff31ffec01e5e6bb65827762a70fec102f38b8"
     },
     "stats": {
       "total": 39,
@@ -1288,6 +1288,25 @@
     },
     "coverage": 74.47,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:17:47.000Z",
+      "message": "feat: agregar servicio para obtener todos los refugios",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 75.51,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
