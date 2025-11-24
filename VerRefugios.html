@@ -15,7 +15,7 @@
     <a href="seguimiento-mascota.html" class="nav-item">Seguimiento</a>
     <a href="VerAdopciones.html" class="nav-item">Adopciones</a>
     <a href="VerRefugios.html" class="nav-item">Refugios</a>
-    
+
     <a href="./lost-dogs.html" class="nav-item active">Extraviados</a>
   </div>
 
@@ -36,6 +36,15 @@
     data-testid="select-departamento"
   >
     <option value="Todos">Todos</option>
+    <option value="Chuquisaca">Chuquisaca</option>
+    <option value="La Paz">La Paz</option>
+    <option value="Cochabamba">Cochabamba</option>
+    <option value="Oruro">Oruro</option>
+    <option value="Potosí">Potosí</option>
+    <option value="Tarija">Tarija</option>
+    <option value="Santa Cruz">Santa Cruz</option>
+    <option value="Beni">Beni</option>
+    <option value="Pando">Pando</option>
   </select>
 </div >
 
@@ -64,13 +73,29 @@
     });
   }
 
-  mostrarRefugios(service.obtenerTodosLosRefugios());
-  
-  const inputNombre = document.getElementById('filtro-nombre');
-  inputNombre.addEventListener('input', (e) => {
-    const refugiosFiltrados = service.filtrarPorNombre(e.target.value);
+  function aplicarFiltros() {
+    const nombre = inputNombre.value;
+    const departamento = selectDepartamento.value;
+    const refugiosFiltrados = service.filtrarRefugios(nombre, departamento);
     mostrarRefugios(refugiosFiltrados);
+  }
+  
+  const selectDepartamento = document.getElementById('filtro-departamento');
+  const departamentos = repository.obtenerDepartamentos();
+  departamentos.forEach(depto => {
+    const option = document.createElement('option');
+    option.value = depto;
+    option.textContent = depto;
+    selectDepartamento.appendChild(option);
   });
+
+ 
+  mostrarRefugios(service.obtenerTodosLosRefugios());
+
+ 
+  const inputNombre = document.getElementById('filtro-nombre');
+  inputNombre.addEventListener('input', aplicarFiltros);
+  selectDepartamento.addEventListener('change', aplicarFiltros);
 </script>
 
 </html>

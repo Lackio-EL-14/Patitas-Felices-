@@ -1444,17 +1444,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "06102c0696ba1851cdb41dcb142fa7d5e66ec87a",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:05:06.000Z",
       "message": "feat: agregar selector de departamento en la interfaz",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/06102c0696ba1851cdb41dcb142fa7d5e66ec87a"
     },
     "stats": {
       "total": 9,
       "additions": 8,
       "deletions": 1,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.86,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:10:44.000Z",
+      "message": "feat: implementar filtrado combinado por nombre y departamento",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 31,
+      "deletions": 6,
       "date": "2025-11-24"
     },
     "coverage": 82.86,
