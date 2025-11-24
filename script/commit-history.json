@@ -1216,17 +1216,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3dd7f985c9668f47fb16d7ddb82e356b5aef707",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T05:45:15.000Z",
       "message": "Merge branch 'main' into buscar-refugios",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/f3dd7f985c9668f47fb16d7ddb82e356b5aef707"
     },
     "stats": {
       "total": 1601,
       "additions": 1406,
       "deletions": 195,
+      "date": "2025-11-24"
+    },
+    "coverage": 70,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:04:25.000Z",
+      "message": "feat: agregar página básica de refugios y prueba de navegación",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
       "date": "2025-11-24"
     },
     "coverage": 70,
