@@ -1235,12 +1235,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "915b8e5a8ac5be999bb946998124ca431337a32a",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:04:25.000Z",
       "message": "feat: agregar página básica de refugios y prueba de navegación",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/915b8e5a8ac5be999bb946998124ca431337a32a"
     },
     "stats": {
       "total": 6,
@@ -1250,6 +1250,25 @@
     },
     "coverage": 70,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:09:38.000Z",
+      "message": "feat: agregar entidad Refugio con propiedades básicas",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 73.33,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }
