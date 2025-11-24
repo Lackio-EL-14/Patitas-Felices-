@@ -15,7 +15,7 @@
     <a href="seguimiento-mascota.html" class="nav-item">Seguimiento</a>
     <a href="VerAdopciones.html" class="nav-item">Adopciones</a>
     <a href="VerRefugios.html" class="nav-item">Refugios</a>
-
+    
     <a href="./lost-dogs.html" class="nav-item active">Extraviados</a>
   </div>
 
@@ -30,6 +30,13 @@
     data-testid="input-nombre"
     placeholder="Ejemplo: Huellitas"
   />
+  <label for="filtro-departamento" style="margin-left: 20px;">Departamento:</label>
+  <select 
+    id="filtro-departamento" 
+    data-testid="select-departamento"
+  >
+    <option value="Todos">Todos</option>
+  </select>
 </div >
 
 <div id="lista-refugios"></div>

@@ -1425,17 +1425,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3deef8226a9c48adae133ff062dd26356d9d913f",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:00:59.000Z",
       "message": "feat: agregar método obtenerDepartamentos en RefugioRepository",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/3deef8226a9c48adae133ff062dd26356d9d913f"
     },
     "stats": {
       "total": 23,
       "additions": 23,
       "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.86,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:05:06.000Z",
+      "message": "feat: agregar selector de departamento en la interfaz",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
       "date": "2025-11-24"
     },
     "coverage": 82.86,
