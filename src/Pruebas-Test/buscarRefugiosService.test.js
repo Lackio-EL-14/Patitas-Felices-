@@ -146,4 +146,29 @@ describe('buscarRefugiosService', () => {
     expect(refugios.length).toBe(0);
   });
 
+  it('debe obtener mascotas de un refugio por su ID', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const mascotas = service.obtenerMascotasDeRefugio(1);
+    
+    expect(mascotas).toEqual(['Firulais', 'Perrita', 'Maxito']);
+    expect(mascotas.length).toBe(3);
+  });
+
+  it('debe retornar array vacío si el refugio no existe', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const mascotas = service.obtenerMascotasDeRefugio(999);
+    
+    expect(mascotas).toEqual([]);
+  });
+
+  it('debe obtener mascotas de otro refugio por su ID', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const mascotas = service.obtenerMascotasDeRefugio(2);
+    
+    expect(mascotas).toEqual(['Luna', 'Rocky']);
+    expect(mascotas.length).toBe(2);
+  });
 });

@@ -73,6 +73,10 @@ export default function buscarRefugiosService(refugioRepository) {
       }
       
       return refugios;
+    },
+    obtenerMascotasDeRefugio(refugioId) {
+      const refugio = refugioRepository.obtenerTodos().find(r => r.id === refugioId);
+      return refugio ? refugio.obtenerMascotas() : [];
     }
   };
 }

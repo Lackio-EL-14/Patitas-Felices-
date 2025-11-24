@@ -1596,12 +1596,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c93c3a019ca5b91bc75e1479467170af0f9f3f2e",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T08:37:16.000Z",
       "message": "feat: actualizar RefugioRepository con nombres coincidentes de mascotas en adopción",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/c93c3a019ca5b91bc75e1479467170af0f9f3f2e"
     },
     "stats": {
       "total": 62,
@@ -1611,6 +1611,25 @@
     },
     "coverage": 82.76,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T08:39:26.000Z",
+      "message": "feat: agregar método obtenerMascotasDeRefugio en servicio",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 29,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 83.33,
+    "test_count": 37,
     "failed_tests": 0,
     "conclusion": "success"
   }
