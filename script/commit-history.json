@@ -1387,12 +1387,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b46bdebf73d5788468187b44491e4e05153ce4db",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:52:54.000Z",
       "message": "feat: agregar método filtrarPorDepartamento",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/b46bdebf73d5788468187b44491e4e05153ce4db"
     },
     "stats": {
       "total": 80,
@@ -1402,6 +1402,25 @@
     },
     "coverage": 79.31,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:55:24.000Z",
+      "message": "feat: agregar metodo combinado entre filtrar por departamento y filtrar por nombre",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 38,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.09,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }

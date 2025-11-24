@@ -21,6 +21,24 @@ export default function buscarRefugiosService(refugioRepository) {
       return refugioRepository.obtenerTodos().filter(refugio => 
         refugio.departamento === departamento
       );
+    },
+    filtrarRefugios(nombre, departamento) {
+      let refugios = refugioRepository.obtenerTodos();
+      
+      if (nombre && nombre.trim() !== '') {
+        const nombreLowerCase = nombre.toLowerCase();
+        refugios = refugios.filter(refugio => 
+          refugio.nombre.toLowerCase().includes(nombreLowerCase)
+        );
+      }
+      
+      if (departamento && departamento.trim() !== '' && departamento !== 'Todos') {
+        refugios = refugios.filter(refugio => 
+          refugio.departamento === departamento
+        );
+      }
+      
+      return refugios;
     }
   };
 }
