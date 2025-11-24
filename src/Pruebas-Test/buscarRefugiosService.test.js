@@ -127,6 +127,23 @@ describe('buscarRefugiosService', () => {
     expect(service.filtrarPorCapacidad(undefined).length).toBe(10);
   });
 
+    it('debe combinar todos los filtros: nombre, departamento y capacidad', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarRefugiosCompleto('', 'La Paz', 3);
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].nombre).toContain('Huellitas');
+    expect(refugios[0].departamento).toBe('La Paz');
+    expect(refugios[0].capacidad).toBeGreaterThanOrEqual(3);
+  });
 
+  it('debe retornar vacío cuando ningún refugio cumple todos los criterios', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarRefugiosCompleto('', 'Tarija', 10);
+    
+    expect(refugios.length).toBe(0);
+  });
 
 });

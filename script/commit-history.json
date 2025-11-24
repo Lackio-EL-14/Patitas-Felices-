@@ -1501,12 +1501,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1efe988f59548cad16e9b67274eda09fa5d209b4",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:49:25.000Z",
       "message": "filtro por capacidad de refugio agragado",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/1efe988f59548cad16e9b67274eda09fa5d209b4"
     },
     "stats": {
       "total": 40,
@@ -1516,6 +1516,25 @@
     },
     "coverage": 83.78,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:51:41.000Z",
+      "message": "combinacion de los tres filtros en buscarRefugiosService",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 44,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.56,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }
