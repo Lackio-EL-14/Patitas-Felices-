@@ -1254,12 +1254,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "893a13ef6ca3573165759f5a9c6d6498e09bdcce",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:09:38.000Z",
       "message": "feat: agregar entidad Refugio con propiedades básicas",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/893a13ef6ca3573165759f5a9c6d6498e09bdcce"
     },
     "stats": {
       "total": 26,
@@ -1269,6 +1269,25 @@
     },
     "coverage": 73.33,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:13:08.000Z",
+      "message": "feat: agregar RefugioRepository con datos de 5 refugios",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 74.47,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }
