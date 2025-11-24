@@ -99,4 +99,34 @@ describe('buscarRefugiosService', () => {
     expect(refugios.length).toBe(0);
   });
 
+  it('debe filtrar refugios con capacidad mayor o igual a 3', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorCapacidad(3);
+    
+    expect(refugios.length).toBe(3);
+    refugios.forEach(refugio => {
+      expect(refugio.capacidad).toBeGreaterThanOrEqual(3);
+    });
+  });
+
+  it('debe filtrar refugios con capacidad mayor o igual a 4', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorCapacidad(4);
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].capacidad).toBe(4);
+  });
+
+  it('debe retornar todos los refugios si capacidad es null o undefined', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    
+    expect(service.filtrarPorCapacidad(null).length).toBe(10);
+    expect(service.filtrarPorCapacidad(undefined).length).toBe(10);
+  });
+
+
+
 });

@@ -1482,12 +1482,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2b2b2626fe108b759785d151606e14cb4378f053",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:30:58.000Z",
       "message": "feat: aumentar el numero de refugios a 10 para que cada departamento tenga al menos un refugio representante",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/2b2b2626fe108b759785d151606e14cb4378f053"
     },
     "stats": {
       "total": 37,
@@ -1497,6 +1497,25 @@
     },
     "coverage": 82.86,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:49:25.000Z",
+      "message": "filtro por capacidad de refugio agragado",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 83.78,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

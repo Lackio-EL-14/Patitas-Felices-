@@ -22,6 +22,16 @@ export default function buscarRefugiosService(refugioRepository) {
         refugio.departamento === departamento
       );
     },
+    filtrarPorCapacidad(capacidadMinima) {
+      if (!capacidadMinima || capacidadMinima === null || capacidadMinima === undefined) {
+        return refugioRepository.obtenerTodos();
+      }
+      
+      return refugioRepository.obtenerTodos().filter(refugio => 
+        refugio.capacidad >= capacidadMinima
+      );
+    },
+
     filtrarRefugios(nombre, departamento) {
       let refugios = refugioRepository.obtenerTodos();
       
