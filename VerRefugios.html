@@ -22,4 +22,28 @@
 </nav>
 <h1>Todos los Refugios</h1>
 
+<div id="lista-refugios"></div>
+
+<script type="module">
+  import RefugioRepository from './src/Ejemplos base/Infraestructure/RefugioRepository.js';
+  import buscarRefugiosService from './src/Ejemplos base/Services/buscarRefugiosService.js';
+
+  const repository = new RefugioRepository();
+  const service = buscarRefugiosService(repository);
+  const refugios = service.obtenerTodosLosRefugios();
+
+  const listaRefugios = document.getElementById('lista-refugios');
+  
+  refugios.forEach(refugio => {
+    const refugioDiv = document.createElement('div');
+    refugioDiv.setAttribute('data-testid', 'refugio-item');
+    refugioDiv.innerHTML = `
+      <h3>${refugio.nombre}</h3>
+      <p>Departamento: ${refugio.departamento}</p>
+      <p>Mascotas: ${refugio.capacidad}</p>
+    `;
+    listaRefugios.appendChild(refugioDiv);
+  });
+</script>
+
 </html>

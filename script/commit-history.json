@@ -1292,16 +1292,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "15cfe939f7524797c5b2ac6dcd8a537f267b84c4",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:17:47.000Z",
       "message": "feat: agregar servicio para obtener todos los refugios",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/15cfe939f7524797c5b2ac6dcd8a537f267b84c4"
     },
     "stats": {
       "total": 19,
       "additions": 19,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 75.51,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:20:34.000Z",
+      "message": "feat: mostrar lista de refugios en la interfaz VerRefugios.html",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
       "deletions": 0,
       "date": "2025-11-24"
     },
