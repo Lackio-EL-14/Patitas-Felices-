@@ -14,4 +14,8 @@ export default class RefugioRepository {
   obtenerTodos() {
     return this.refugios;
   }
+  obtenerDepartamentos() {
+    const departamentos = this.refugios.map(refugio => refugio.departamento);
+    return [...new Set(departamentos)];
+  }
 }

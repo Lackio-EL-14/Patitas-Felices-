@@ -1406,12 +1406,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "755d49873a04c233c60556003f0a13ce313fb96a",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:55:24.000Z",
       "message": "feat: agregar metodo combinado entre filtrar por departamento y filtrar por nombre",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/755d49873a04c233c60556003f0a13ce313fb96a"
     },
     "stats": {
       "total": 38,
@@ -1421,6 +1421,25 @@
     },
     "coverage": 82.09,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:00:59.000Z",
+      "message": "feat: agregar método obtenerDepartamentos en RefugioRepository",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.86,
+    "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
   }
