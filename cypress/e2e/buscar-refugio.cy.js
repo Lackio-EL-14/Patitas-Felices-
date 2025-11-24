@@ -79,3 +79,44 @@ describe('Buscar Refugios - Filtrar por departamento', () => {
   });
 });
 
+describe('Buscar Refugios - Filtrar por capacidad', () => {
+  it('debe mostrar un campo de capacidad mínima', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="input-capacidad-min"]').should('exist');
+  });
+
+  it('debe filtrar refugios con capacidad mayor o igual a 3', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="input-capacidad-min"]').type('3');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 3);
+  });
+
+  it('debe filtrar refugios con capacidad mayor o igual a 4', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="input-capacidad-min"]').type('4');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 1);
+  });
+
+  it('debe mostrar todos los refugios cuando el campo de capacidad está vacío', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="input-capacidad-min"]').type('3');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 3);
+    cy.get('[data-testid="input-capacidad-min"]').clear();
+    cy.get('[data-testid="refugio-item"]').should('have.length', 10);
+  });
+
+  it('debe combinar todos los filtros: nombre, departamento y capacidad', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('La Paz');
+    cy.get('[data-testid="input-capacidad-min"]').type('3');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 1);
+    cy.get('[data-testid="refugio-item"]').first().should('contain', 'Huellitas');
+  });
+
+  it('debe retornar vacío cuando no hay refugios que cumplan todos los filtros', () => {
+    cy.visit('/VerRefugios.html');
+    cy.get('[data-testid="select-departamento"]').select('Tarija');
+    cy.get('[data-testid="input-capacidad-min"]').type('10');
+    cy.get('[data-testid="refugio-item"]').should('have.length', 0);
+  });
+});

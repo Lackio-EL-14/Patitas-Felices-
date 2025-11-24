@@ -1539,17 +1539,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0c1fd8fdb70cacd9bc2210c48f8533d96270203c",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:53:47.000Z",
       "message": "feat: agregar campo de capacidad mínima en la interfaz",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/0c1fd8fdb70cacd9bc2210c48f8533d96270203c"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.56,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T08:09:22.000Z",
+      "message": "feat: implementar filtrado combinado por nombre, departamento y capacidad",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 50,
+      "deletions": 6,
       "date": "2025-11-24"
     },
     "coverage": 82.56,

@@ -75,10 +75,13 @@
   function aplicarFiltros() {
     const nombre = inputNombre.value;
     const departamento = selectDepartamento.value;
-    const refugiosFiltrados = service.filtrarRefugios(nombre, departamento);
+    const capacidadMinima = inputCapacidad.value ? parseInt(inputCapacidad.value) : null;
+    
+    const refugiosFiltrados = service.filtrarRefugiosCompleto(nombre, departamento, capacidadMinima);
     mostrarRefugios(refugiosFiltrados);
   }
-  
+
+
   const selectDepartamento = document.getElementById('filtro-departamento');
   const departamentos = repository.obtenerDepartamentos();
   departamentos.forEach(depto => {
@@ -91,10 +94,13 @@
  
   mostrarRefugios(service.obtenerTodosLosRefugios());
 
- 
+
   const inputNombre = document.getElementById('filtro-nombre');
+  const inputCapacidad = document.getElementById('filtro-capacidad');
+  
   inputNombre.addEventListener('input', aplicarFiltros);
   selectDepartamento.addEventListener('change', aplicarFiltros);
+  inputCapacidad.addEventListener('input', aplicarFiltros);
 </script>
 
 </html>
