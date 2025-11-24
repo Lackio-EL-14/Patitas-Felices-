@@ -1558,12 +1558,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c91125197a9c0a2c2e86bacc806add7625e361ab",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T08:09:22.000Z",
       "message": "feat: implementar filtrado combinado por nombre, departamento y capacidad",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/c91125197a9c0a2c2e86bacc806add7625e361ab"
     },
     "stats": {
       "total": 56,
@@ -1573,6 +1573,25 @@
     },
     "coverage": 82.56,
     "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T08:35:06.000Z",
+      "message": "feat: agregar método obtenerMascotas en entidad Refugio",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 101,
+      "additions": 100,
+      "deletions": 1,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.76,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -33,7 +33,7 @@ function obtenerMascotas(){
         {
             id: 7,
             nombre: 'Toby',
-            imagen: "https://th.bing.com/th/id/R.a28ae3dd28116470526b4e9000a3b29e?rik=4xKMNuOtT8tQ3g&riu=http%3a%2f%2fwww.blogerin.com%2fwp-content%2fuploads%2f2012%2f10%2fFotos-tiernas-de-perritos-wallpapers-4.jpg&ehk=Sl%2flBA7kUSkV8thXHzpR81zrKJcGRlph1%2f%2bUBwBTm28%3d&risl=&pid=ImgRaw&r=0"
+            imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ8JQfoYNDB5toCZ1jtoY5Bz0TwS1srsqmQ&s"
         },
         {
             id: 8,
@@ -105,6 +105,21 @@ function obtenerMascotas(){
             nombre: 'Sasha',
             imagen: "https://www.boredpanda.com/blog/wp-content/uploads/2024/10/C0c_MOfKO8R-png__880.jpg"
         },
+        {
+            id: 22,
+            nombre: 'Ginger',
+            imagen: "https://www.superpet.ec/wp-content/uploads/2020/05/husky-1-3.webp"
+        },
+        {
+            id: 23,
+            nombre: 'Oreo',
+            imagen: "https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2018/03/21/_border_d138bf6b.jpg"
+        },
+        {
+            id: 24,
+            nombre: 'Loki',
+            imagen: "https://somosmuyperros.com/wp-content/uploads/2017/02/Dalmata.jpg"
+        } 
     ];
 };
 export default obtenerMascotas;

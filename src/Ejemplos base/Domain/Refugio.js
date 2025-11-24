@@ -6,4 +6,7 @@ export default class Refugio {
     this.mascotas = mascotas;
     this.capacidad = capacidad;
   }
+  obtenerMascotas() {
+    return this.mascotas;
+  }
 }
