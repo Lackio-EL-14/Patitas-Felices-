@@ -1615,17 +1615,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ce18dd1b49369e4ec99f8d2e3a51d7175dd5d9b0",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T08:39:26.000Z",
       "message": "feat: agregar método obtenerMascotasDeRefugio en servicio",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ce18dd1b49369e4ec99f8d2e3a51d7175dd5d9b0"
     },
     "stats": {
       "total": 29,
       "additions": 29,
       "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 83.33,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T08:45:09.000Z",
+      "message": "feat: implementar visualización de mascotas por refugio",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 57,
+      "deletions": 1,
       "date": "2025-11-24"
     },
     "coverage": 83.33,

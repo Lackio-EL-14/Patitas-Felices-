@@ -55,7 +55,8 @@
 
   const repository = new RefugioRepository();
   const service = buscarRefugiosService(repository);
-  
+  let refugioExpandido = null;
+
   function mostrarRefugios(refugios) {
     const listaRefugios = document.getElementById('lista-refugios');
     listaRefugios.innerHTML = '';
@@ -63,13 +64,68 @@
     refugios.forEach(refugio => {
       const refugioDiv = document.createElement('div');
       refugioDiv.setAttribute('data-testid', 'refugio-item');
+      refugioDiv.style.border = '1px solid #ccc';
+      refugioDiv.style.padding = '15px';
+      refugioDiv.style.marginBottom = '10px';
+      refugioDiv.style.borderRadius = '5px';
+      
       refugioDiv.innerHTML = `
         <h3>${refugio.nombre}</h3>
         <p>Departamento: ${refugio.departamento}</p>
         <p>Mascotas: ${refugio.capacidad}</p>
+        <button data-testid="btn-ver-mascotas" data-refugio-id="${refugio.id}">Ver mascotas</button>
+        <div id="mascotas-${refugio.id}" style="display: none; margin-top: 10px;"></div>
       `;
+      
       listaRefugios.appendChild(refugioDiv);
     });
+    
+    document.querySelectorAll('[data-testid="btn-ver-mascotas"]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const refugioId = parseInt(e.target.getAttribute('data-refugio-id'));
+        toggleMascotas(refugioId, e.target);
+      });
+    });
+  }
+
+  function toggleMascotas(refugioId, boton) {
+    const mascotasDiv = document.getElementById(`mascotas-${refugioId}`);
+    
+    if (refugioExpandido === refugioId) {
+      mascotasDiv.style.display = 'none';
+      mascotasDiv.innerHTML = '';
+      mascotasDiv.removeAttribute('data-testid');
+      boton.textContent = 'Ver mascotas';
+      refugioExpandido = null;
+    } else {
+      if (refugioExpandido !== null) {
+        const prevDiv = document.getElementById(`mascotas-${refugioExpandido}`);
+        if (prevDiv) {
+          prevDiv.style.display = 'none';
+          prevDiv.innerHTML = '';
+          prevDiv.removeAttribute('data-testid');
+          const prevBtn = document.querySelector(`[data-refugio-id="${refugioExpandido}"]`);
+          if (prevBtn) prevBtn.textContent = 'Ver mascotas';
+        }
+      }
+      
+      const mascotas = service.obtenerMascotasDeRefugio(refugioId);
+      mascotasDiv.setAttribute('data-testid', 'lista-mascotas');
+      mascotasDiv.innerHTML = '<h4>Mascotas disponibles:</h4>';
+      
+      const mascotasUl = document.createElement('ul');
+      mascotas.forEach(mascota => {
+        const li = document.createElement('li');
+        li.setAttribute('data-testid', 'mascota-nombre');
+        li.textContent = mascota;
+        mascotasUl.appendChild(li);
+      });
+      
+      mascotasDiv.appendChild(mascotasUl);
+      mascotasDiv.style.display = 'block';
+      boton.textContent = 'Ocultar mascotas';
+      refugioExpandido = refugioId;
+    }
   }
 
   function aplicarFiltros() {
