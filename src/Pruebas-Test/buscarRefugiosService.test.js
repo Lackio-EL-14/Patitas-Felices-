@@ -9,4 +9,46 @@ describe('buscarRefugiosService', () => {
     
     expect(refugios.length).toBe(5);
   });
+  it('debe filtrar refugios por nombre exacto', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorNombre('Refugio Huellitas Felices');
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].nombre).toBe('Refugio Huellitas Felices');
+  });
+
+  it('debe filtrar refugios por nombre parcial', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorNombre('Huellitas');
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].nombre).toContain('Huellitas');
+  });
+
+  it('debe ser insensible a mayúsculas y minúsculas', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorNombre('huellitas');
+    
+    expect(refugios.length).toBe(1);
+    expect(refugios[0].nombre).toContain('Huellitas');
+  });
+
+  it('debe retornar array vacío si no encuentra coincidencias', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorNombre('NoExiste');
+    
+    expect(refugios.length).toBe(0);
+  });
+
+  it('debe retornar todos los refugios si el nombre está vacío', () => {
+    const repository = new RefugioRepository();
+    const service = buscarRefugiosService(repository);
+    const refugios = service.filtrarPorNombre('');
+    
+    expect(refugios.length).toBe(5);
+  });
 });

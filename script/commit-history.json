@@ -1311,12 +1311,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "48f1558345ca9a71b598fda98afa4e62f164da90",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:20:34.000Z",
       "message": "feat: mostrar lista de refugios en la interfaz VerRefugios.html",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/48f1558345ca9a71b598fda98afa4e62f164da90"
     },
     "stats": {
       "total": 24,
@@ -1326,6 +1326,25 @@
     },
     "coverage": 75.51,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:27:50.000Z",
+      "message": "feat: agregar método filtrarPorNombre en buscarRefugiosService",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 82,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 77.78,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }
