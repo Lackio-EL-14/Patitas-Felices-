@@ -1463,17 +1463,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9af299477255786659a5338e7ebe5cc53c3650ce",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T07:10:44.000Z",
       "message": "feat: implementar filtrado combinado por nombre y departamento",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/9af299477255786659a5338e7ebe5cc53c3650ce"
     },
     "stats": {
       "total": 37,
       "additions": 31,
       "deletions": 6,
+      "date": "2025-11-24"
+    },
+    "coverage": 82.86,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T07:30:58.000Z",
+      "message": "feat: aumentar el numero de refugios a 10 para que cada departamento tenga al menos un refugio representante",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 19,
+      "deletions": 18,
       "date": "2025-11-24"
     },
     "coverage": 82.86,

@@ -35,7 +35,7 @@ describe('Buscar Refugios - Filtrar por nombre', () => {
     cy.get('[data-testid="input-nombre"]').type('Huellitas');
     cy.get('[data-testid="refugio-item"]').should('have.length', 1);
     cy.get('[data-testid="input-nombre"]').clear();
-    cy.get('[data-testid="refugio-item"]').should('have.length', 5);
+    cy.get('[data-testid="refugio-item"]').should('have.length', 10);
   });
 });
 
@@ -66,7 +66,7 @@ describe('Buscar Refugios - Filtrar por departamento', () => {
     cy.get('[data-testid="select-departamento"]').select('La Paz');
     cy.get('[data-testid="refugio-item"]').should('have.length', 2);
     cy.get('[data-testid="select-departamento"]').select('Todos');
-    cy.get('[data-testid="refugio-item"]').should('have.length', 5);
+    cy.get('[data-testid="refugio-item"]').should('have.length', 10);
   });
 
   it('debe combinar filtros de nombre y departamento', () => {

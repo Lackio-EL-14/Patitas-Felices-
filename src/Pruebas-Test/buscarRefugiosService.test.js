@@ -7,7 +7,7 @@ describe('buscarRefugiosService', () => {
     const service = buscarRefugiosService(repository);
     const refugios = service.obtenerTodosLosRefugios();
     
-    expect(refugios.length).toBe(5);
+    expect(refugios.length).toBe(10);
   });
   it('debe filtrar refugios por nombre exacto', () => {
     const repository = new RefugioRepository();
@@ -49,7 +49,7 @@ describe('buscarRefugiosService', () => {
     const service = buscarRefugiosService(repository);
     const refugios = service.filtrarPorNombre('');
     
-    expect(refugios.length).toBe(5);
+    expect(refugios.length).toBe(10);
   });
 
   it('debe filtrar refugios por departamento "La Paz"', () => {
@@ -76,8 +76,8 @@ describe('buscarRefugiosService', () => {
     const repository = new RefugioRepository();
     const service = buscarRefugiosService(repository);
     
-    expect(service.filtrarPorDepartamento('').length).toBe(5);
-    expect(service.filtrarPorDepartamento('Todos').length).toBe(5);
+    expect(service.filtrarPorDepartamento('').length).toBe(10);
+    expect(service.filtrarPorDepartamento('Todos').length).toBe(10);
   });
 
   

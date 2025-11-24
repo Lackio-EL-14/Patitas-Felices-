@@ -19,7 +19,7 @@ describe('RefugioRepository', () => {
     expect(primerRefugio).toHaveProperty('mascotas');
     expect(primerRefugio).toHaveProperty('capacidad');
   });
-  
+
   it('debe retornar lista única de departamentos', () => {
     const repository = new RefugioRepository();
     const departamentos = repository.obtenerDepartamentos();
@@ -28,7 +28,12 @@ describe('RefugioRepository', () => {
     expect(departamentos).toContain('Cochabamba');
     expect(departamentos).toContain('Santa Cruz');
     expect(departamentos).toContain('Tarija');
-    expect(departamentos.length).toBe(4);
+    expect(departamentos).toContain('Oruro');
+    expect(departamentos).toContain('Potosí');
+    expect(departamentos).toContain('Beni');
+    expect(departamentos).toContain('Pando');
+    expect(departamentos).toContain('Chuquisaca');
+    expect(departamentos.length).toBe(9);
   });
 
   it('debe retornar departamentos sin duplicados', () => {
