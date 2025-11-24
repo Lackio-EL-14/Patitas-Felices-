@@ -1330,16 +1330,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bed624efe8dd45653773aa42dbea607bd671841a",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T06:27:50.000Z",
       "message": "feat: agregar método filtrarPorNombre en buscarRefugiosService",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/bed624efe8dd45653773aa42dbea607bd671841a"
     },
     "stats": {
       "total": 82,
       "additions": 82,
+      "deletions": 0,
+      "date": "2025-11-24"
+    },
+    "coverage": 77.78,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Lackio-EL-14",
+    "commit": {
+      "date": "2025-11-24T06:30:18.000Z",
+      "message": "feat: agregar campo de búsqueda por nombre en la interfaz",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
       "deletions": 0,
       "date": "2025-11-24"
     },
