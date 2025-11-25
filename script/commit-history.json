@@ -1634,18 +1634,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ea69b0e59fc3dacbb4725db668e1e255b42289b5",
     "author": "Lackio-EL-14",
     "commit": {
       "date": "2025-11-24T08:45:09.000Z",
       "message": "feat: implementar visualización de mascotas por refugio",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/ea69b0e59fc3dacbb4725db668e1e255b42289b5"
     },
     "stats": {
       "total": 58,
       "additions": 57,
       "deletions": 1,
       "date": "2025-11-24"
+    },
+    "coverage": 83.33,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ela251643010",
+    "commit": {
+      "date": "2025-11-25T09:54:00.000Z",
+      "message": "se quito ver mas y se anadio filtrar por nombre",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 78,
+      "additions": 58,
+      "deletions": 20,
+      "date": "2025-11-25"
     },
     "coverage": 83.33,
     "test_count": 37,
