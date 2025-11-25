@@ -1653,17 +1653,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2b2ec6b0ba5147c518c2d70d8d92d43476b314d2",
     "author": "ela251643010",
     "commit": {
       "date": "2025-11-25T09:54:00.000Z",
       "message": "se quito ver mas y se anadio filtrar por nombre",
-      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/2b2ec6b0ba5147c518c2d70d8d92d43476b314d2"
     },
     "stats": {
       "total": 78,
       "additions": 58,
       "deletions": 20,
+      "date": "2025-11-25"
+    },
+    "coverage": 83.33,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Camila",
+    "commit": {
+      "date": "2025-11-25T13:20:58.000Z",
+      "message": "fix: index bienvenida",
+      "url": "https://github.com/Lackio-EL-14/Patitas-Felices-/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 1,
+      "deletions": 2,
       "date": "2025-11-25"
     },
     "coverage": 83.33,
